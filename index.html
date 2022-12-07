@@ -21,6 +21,29 @@
 						top: 0.25em;
 						width: 150;
 					}
+
+.img-photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height:90%;
+}
+
+.slideshow-container {
+  height: 600px;
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-caption {
+  font-size: 24px;
+  width: 100%;
+  text-align: center;
+}
+
 			</style>
 	</head>
 	<body>
@@ -69,12 +92,22 @@
 									<p>If you're interested in machine-learning-flavored genomics, gene regulation and/or RNA splicing, please get in <a href="mailto:daknowles@nygenome.org">touch</a>! We have experimental lab space so that includes wet lab people looking to do damp (mixed computational/experimental) projects. I'm also interested in hearing from machine learning folks who are curious about applying their expertise in genetics/genomics.</p>
 									
 									<p>All lab members will have the option of being cross-trained in both computational analysis and experimental work. Postdocs and students are eligible for an appointment at Columbia University.</p>									<ul class="feature-icons">
+										
+																		
+<div class="slideshow-container">
+	<img class="img-photo" id="pic" src="photos/ASHG2022_with_Raj_lab.jpg"> 
+	<div class="text-caption" id="caption">Caption</div>
+  </div>
+  <br>
+										
 										<li class="fa-scissors"><a href="#splicing">RNA splicing</a></li>
 										<li class="fa-fighter-jet"><a href="#eagle">Gene-by-environment</a></li>
 										<!-- <li class="fa-microchip">Digital histology</li> -->
 										<li class="fa-wrench"><a href="#vb">Variational methods</a></li>
 										<li class="fa-snowflake-o"><a href="#bnp">Bayesian nonparametrics</a></li>
 									</ul>
+
+
 									
 									<section id="splicing">
 										<div>
@@ -214,6 +247,11 @@
 <p><div><span class="image face"><img src="images/sophia.jpg" alt="Sophia" width=150/></span></div>Sophia is an undergraduate student at Barnard College studying Computational Biology and Dance. She is broadly interested in the use of computational methods to better understand complex biological processes, and is currently studying the role of alternative splicing in Autism Spectrum Disorder. Additionally, Sophia is passionate about increasing the accessibility of scientific information, which she pursues through her work as a Science Writing Fellow at Barnard. In her free time, Sophia enjoys being in nature and getting involved in the New York City arts scene.</p> 
 </div> </section> <!-- End sophia -->
 
+<section id="gill"> <div>
+	<h4>Gill Bartels-Quansah</h4>
+<p><div><span class="image face"><img src="images/gill.jpg" alt="Gill" width=150/></span></div>Gill is an undergraduate student at Barnard College majoring in Computer Science and minoring in English and Science and Public Policy. She is interested in the underlying algorithmic biases in machine learning and its effects on the field of genomics. She is currently studying the role of RNA binding proteins in Alzheimer's Disease using deep learning models. In addition, Gill is interested in the intersection between racial justice, art, and technology which she pursues through her work with Arts and Resistance Through Education (ARTE) and as a Writing Fellow at Barnard. In her free time, Gill enjoys singing with her a cappella group, crocheting, and exploring the city for artsy bookstores.</p> 
+</div> </section> <!-- End Gill -->
+
 
 <section id="sid"> <div>
 	<h4>Siddhant (Sid) Sanghi</h4>
@@ -285,7 +323,8 @@
 										<li class="fa-bullhorn"><a href="#working">Working</a></li>
 										<li class="fa-flask"><a href="#genetics">Genetics</a></li>
 										<li class="fa-cog"><a href="#ml">Machine learning/statistics</a></li>
-									</ul><section id="working">
+									</ul>
+<section id="working">
 <h4>Working/under submission</h4>
 <ol>
 <li><div id="Brown2022"><em>Brown BC, Wang C, Kasela S, Aguet F, Nachun DC, Taylor KD, Tracy RP, Durda P, Liu Y, Craig Johnson W, Van Den Berg D, Gupta N, Gabriel S, Smith JD, Gerzsten R, Clish C, Wong Q, Papanicolau G, Blackwell TW, Rotter JI, Rich SS, Ardlie KG, Knowles DA and Lappalainen T</em> (2022), <strong>"Multiset correlation and factor analysis enables exploration of multi-omic data"</strong>, bioRxiv., July, 2022. , pp. 2022.07.18.500246.</div>
@@ -1563,5 +1602,34 @@ Code from older projects:
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-	</body>
+
+
+<script>
+	let slideIndex = 0;
+	// get list of photos just using ls photos
+	const photo_files = `2022 holiday (and birthday) party.jpg
+ASHG2022_hike_San_Jacinto.jpg
+ASHG2022_hike_lunch.jpg
+ASHG2022_hike_pinecones.jpg
+ASHG2022_hike_selfie.jpg
+ASHG2022_with_Raj_lab.jpg
+Bowling_2021.jpg
+Caveman poetry at the 2022 holiday party.jpg
+Lab_hike_in_Beacon_2022.jpg
+Summer_2021_crew.jpg`.split('\n'); 
+	
+	showSlides();
+	
+	function showSlides() {
+		let pic = document.getElementById("pic");
+		pic.src = "photos/" + photo_files[slideIndex];
+		let cap = document.getElementById("caption");
+		cap.textContent = photo_files[slideIndex].replace(/_/g," ").replace(".jpg","").replace(".jpeg","");
+		slideIndex++;
+		if (slideIndex >= photo_files.length) {slideIndex = 0} 
+		setTimeout(showSlides, 2000); // Change image every 2 seconds
+	}
+	</script>
+
+</body>
 </html>
