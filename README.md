@@ -5,6 +5,12 @@
 * [EAGLE](https://github.com/davidaknowles/eagle) software for detecting GxE interactions from RNA-seq using allele specific expression
 * On twitter at [@david_a_knowles](https://twitter.com/david_a_knowles)
 
+# Notes on updating
+
+* To upload publications add them to publications/publications.bib, with one of the keywords used in publications/build_pubs.sh (currently mlstats,genetics or working). Then run the jabref commands in publications/build_pubs.sh. 
+* To update photos, add to photos/ and then to the code at the end of src/footer.html. 
+* Finally run ./build.sh to make a new index.html. 
+
 # Banner credit
 
 Photo by <https://unsplash.com/@davidhiggins>
