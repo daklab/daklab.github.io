@@ -114,22 +114,27 @@
 									<section id="splicing">
 										<div>
 									<h4>RNA splicing</h4>
-									<p>We developed <a href="https://github.com/davidaknowles/leafcutter">LeafCutter</a> to identify, quantify and test variable intron splicing events, obviating the need for accurate transcript annotations and circumventing the challenges in estimating relative isoform abundance (<a href="#LeafCutter">link</a>). An early version of <em>LeafCutter</em> was used in <a href="#Li2016splicing">our study</a> linking complex disease and splicing. </p>
+									<p>We developed <a href="https://github.com/davidaknowles/leafcutter">LeafCutter</a> to identify, quantify and test variable intron splicing events, obviating the need for accurate transcript annotations and circumventing the challenges in estimating relative isoform abundance (<a href="#LeafCutter">paper</a>). An early version of <em>LeafCutter</em> was used in <a href="#Li2016splicing">our study</a> linking complex disease and splicing. </p>
 								</div>
 
 		<div>
 	<h4>CRISPR/Cas13-based methods to study isoform function</h4>
-	<p>A major challenge in characterizing the cellular function of different splice isoforms of a gene is the lack of methods to specifically and efficiently modulate their expression. We are currently developing Cas13-based strategies to 1) identify isoforms of the same gene with differential function in a high throughput manner and 2) to investigate the cellular functions of specific isoforms of interest.</p>
+	<p>A major challenge in characterizing the cellular function of different splice isoforms of a gene is the lack of methods to specifically and efficiently modulate their expression. We are currently developing <a href="Wessels2023-ko">Cas13-based strategies</a> to 1) identify isoforms of the same gene with differential function in a high throughput manner and 2) to investigate the cellular functions of specific isoforms of interest.</p>
 	</div>	
 
 		<div>
 	<h4>Variant effects on RBP binding and splicing</h4>
 <p>Large sequencing consortia have identified thousands of genetic variants that are associated with splicing changes: splicing quantitative trait loci (sQTL). However, the causal variants and their intermediate molecular effects are largely unclear, although it is expected that many sQTLs function by altering binding of one or more RNA binding proteins (RBPs). We have several wet/dry lab projects trying to understand how non-coding variants affect RBP (especially splice factors) binding and, ultimately, splicing.</p>
 </div>	
+
+<div>
+	<h4>Causal inference in genetics</h4>
+<p>We're interested in designing statistical methods to infer causal relationships amongst traits and molecular phenotypes. For example, we developed <a href="#Brown2021">Welch-weighted Egger regression</a> to efficiently control for correlated pleiotropy (that is, a heritable confounding factor) in Mendelian randomization. We are working on <a href="#Brown2020">approaches</a> to infer direct causal effects from total causal effect estimates in high-dimensional settings.</p>
+</div>	
 </section> 
 								<section id="eagle"> <div>
 								<h4>Genetic differences in environmental response</h4>
-								<p>Phenotypic variation results from the interplay of genotype and environment: genetic variation can modulate the transcriptomic response to perturbation. However, detecting gene by environment (GxE) effects on the transcriptome is challenging in observational data. We developed <a href="#Knowles2017gxe">EAGLE</a> to leverages allele-specific expression as a controlled, with-in individual test of the influence of environment factors on different genetic backgrounds. Another approach is direct in vitro perturbation of cells, which can greatly increase power to detect GxE due to increased effect sizes and controlled conditions. We used human iPSC-derived somatic cells to understand the genetic basis of anthracycline-cardiotoxicity (ACT), a common side-effect of chemotherapy. We measured transcriptomic and cellular damage response in a panel of iPSC-derived cardiomyocytes from 45 individuals. Using a novel, efficient linear mixed model, <a href="https://github.com/davidaknowles/suez">suez</a>, we identified hundreds of loci that interact with ACT response and which are enriched in ACT GWAS (<a href="#Knowles2018dox">link</a>). </p>
+								<p>Phenotypic variation results from the interplay of genotype and environment: genetic variation can modulate the transcriptomic response to perturbation. However, detecting gene by environment (GxE) effects on the transcriptome is challenging in observational data. We developed <a href="#Knowles2017gxe">EAGLE</a> to leverages allele-specific expression as a controlled, with-in individual test of the influence of environment factors on different genetic backgrounds. Another approach is direct in vitro perturbation of cells, which can greatly increase power to detect GxE due to increased effect sizes and controlled conditions. We used human iPSC-derived somatic cells to understand the genetic basis of anthracycline-cardiotoxicity (ACT), a common side-effect of chemotherapy. We measured transcriptomic and cellular damage response in a panel of iPSC-derived cardiomyocytes from 45 individuals. Using a novel, efficient linear mixed model, <a href="https://github.com/davidaknowles/suez">suez</a>, we identified hundreds of loci that interact with ACT response and which are enriched in ACT GWAS (<a href="#Knowles2018dox">paper</a>). </p>
 								 </div> </section>
 
 								 <section id="vb"> <div>

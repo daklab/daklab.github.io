@@ -114,22 +114,27 @@
 									<section id="splicing">
 										<div>
 									<h4>RNA splicing</h4>
-									<p>We developed <a href="https://github.com/davidaknowles/leafcutter">LeafCutter</a> to identify, quantify and test variable intron splicing events, obviating the need for accurate transcript annotations and circumventing the challenges in estimating relative isoform abundance (<a href="#LeafCutter">link</a>). An early version of <em>LeafCutter</em> was used in <a href="#Li2016splicing">our study</a> linking complex disease and splicing. </p>
+									<p>We developed <a href="https://github.com/davidaknowles/leafcutter">LeafCutter</a> to identify, quantify and test variable intron splicing events, obviating the need for accurate transcript annotations and circumventing the challenges in estimating relative isoform abundance (<a href="#LeafCutter">paper</a>). An early version of <em>LeafCutter</em> was used in <a href="#Li2016splicing">our study</a> linking complex disease and splicing. </p>
 								</div>
 
 		<div>
 	<h4>CRISPR/Cas13-based methods to study isoform function</h4>
-	<p>A major challenge in characterizing the cellular function of different splice isoforms of a gene is the lack of methods to specifically and efficiently modulate their expression. We are currently developing Cas13-based strategies to 1) identify isoforms of the same gene with differential function in a high throughput manner and 2) to investigate the cellular functions of specific isoforms of interest.</p>
+	<p>A major challenge in characterizing the cellular function of different splice isoforms of a gene is the lack of methods to specifically and efficiently modulate their expression. We are currently developing <a href="Wessels2023-ko">Cas13-based strategies</a> to 1) identify isoforms of the same gene with differential function in a high throughput manner and 2) to investigate the cellular functions of specific isoforms of interest.</p>
 	</div>	
 
 		<div>
 	<h4>Variant effects on RBP binding and splicing</h4>
 <p>Large sequencing consortia have identified thousands of genetic variants that are associated with splicing changes: splicing quantitative trait loci (sQTL). However, the causal variants and their intermediate molecular effects are largely unclear, although it is expected that many sQTLs function by altering binding of one or more RNA binding proteins (RBPs). We have several wet/dry lab projects trying to understand how non-coding variants affect RBP (especially splice factors) binding and, ultimately, splicing.</p>
 </div>	
+
+<div>
+	<h4>Causal inference in genetics</h4>
+<p>We're interested in designing statistical methods to infer causal relationships amongst traits and molecular phenotypes. For example, we developed <a href="#Brown2021">Welch-weighted Egger regression</a> to efficiently control for correlated pleiotropy (that is, a heritable confounding factor) in Mendelian randomization. We are working on <a href="#Brown2020">approaches</a> to infer direct causal effects from total causal effect estimates in high-dimensional settings.</p>
+</div>	
 </section> 
 								<section id="eagle"> <div>
 								<h4>Genetic differences in environmental response</h4>
-								<p>Phenotypic variation results from the interplay of genotype and environment: genetic variation can modulate the transcriptomic response to perturbation. However, detecting gene by environment (GxE) effects on the transcriptome is challenging in observational data. We developed <a href="#Knowles2017gxe">EAGLE</a> to leverages allele-specific expression as a controlled, with-in individual test of the influence of environment factors on different genetic backgrounds. Another approach is direct in vitro perturbation of cells, which can greatly increase power to detect GxE due to increased effect sizes and controlled conditions. We used human iPSC-derived somatic cells to understand the genetic basis of anthracycline-cardiotoxicity (ACT), a common side-effect of chemotherapy. We measured transcriptomic and cellular damage response in a panel of iPSC-derived cardiomyocytes from 45 individuals. Using a novel, efficient linear mixed model, <a href="https://github.com/davidaknowles/suez">suez</a>, we identified hundreds of loci that interact with ACT response and which are enriched in ACT GWAS (<a href="#Knowles2018dox">link</a>). </p>
+								<p>Phenotypic variation results from the interplay of genotype and environment: genetic variation can modulate the transcriptomic response to perturbation. However, detecting gene by environment (GxE) effects on the transcriptome is challenging in observational data. We developed <a href="#Knowles2017gxe">EAGLE</a> to leverages allele-specific expression as a controlled, with-in individual test of the influence of environment factors on different genetic backgrounds. Another approach is direct in vitro perturbation of cells, which can greatly increase power to detect GxE due to increased effect sizes and controlled conditions. We used human iPSC-derived somatic cells to understand the genetic basis of anthracycline-cardiotoxicity (ACT), a common side-effect of chemotherapy. We measured transcriptomic and cellular damage response in a panel of iPSC-derived cardiomyocytes from 45 individuals. Using a novel, efficient linear mixed model, <a href="https://github.com/davidaknowles/suez">suez</a>, we identified hundreds of loci that interact with ACT response and which are enriched in ACT GWAS (<a href="#Knowles2018dox">paper</a>). </p>
 								 </div> </section>
 
 								 <section id="vb"> <div>
@@ -377,26 +382,7 @@
 <section id="working">
 <h4>Working/under submission</h4>
 <ol>
-<li><div id="Gaiti2022"><em>Gaiti F, Chamely P, Hawkins AG, Cort&eacute;s-L&oacute;pez M, Swett AD, Ganesan S, Mouhieddine TH, Dai X, Kluegel L, Chen C, Batta K, Beaulaurier J, Drong AW, Hickey S, Dusaj N, Mullokandov G, Su J, Chalign&eacute; R, Juul S, Harrington E, Knowles DA, Wiseman DH, Ghobrial IM, Taylor J, Abdel-Wahab O and Landau DA</em> (2022), <strong>"Single-cell multi-omics defines the cell-type specific impact of splicing aberrations in human hematopoietic clonal outgrowths"</strong>, bioRxiv. , pp. 2022.06.08.495292.</div>
-<div>[<a data-toggle="collapse" href="#abs_Gaiti2022">Abstract</a>][<a href="#bib_Gaiti2022" data-toggle="collapse">BibTeX</a>] [<a href="https://www.biorxiv.org/content/10.1101/2022.06.08.495292v1" target="_blank">URL</a>]</div>
-
-<div id="abs_Gaiti2022" class="collapse">
-	<b>Abstract</b>: RNA splicing factors are recurrently affected by alteration-of-function mutations in clonal blood disorders, highlighting the importance of splicing regulation in hematopoiesis. However, our understanding of the impact of dysregulated RNA splicing has been hampered by the inability to distinguish mutant and wildtype cells in primary patient samples, the cell-type complexity of the hematopoietic system, and the sparse and biased coverage of splice junctions by short-read sequencing typically used in single-cell RNA sequencing. To overcome these limitations, we developed GoT-Splice by integrating Genotyping of Transcriptomes (GoT) with enhanced efficiency long-read single-cell transcriptome profiling, as well as proteogenomics (with CITE-seq). This allowed for the simultaneous single-cell profiling of gene expression, cell surface protein markers, somatic mutation status, and RNA splicing. We applied GoT-Splice to bone marrow progenitors from patients with myelodysplastic syndrome (MDS) affected by mutations in the most prevalent mutated RNA splicing factor -- the core RNA splicing factor SF3B1 . High-resolution mapping of SF3B1 mut vs. SF3B1 wt hematopoietic progenitors revealed a fitness advantage of SF3B1 mut cells in the megakaryocytic-erythroid lineage, resulting in an expansion of SF3B1 mut erythroid progenitor (EP) cells. SF3B1 mut EP cells exhibited upregulation of genes involved in regulation of cell cycle and mRNA translation. Long-read single-cell transcriptomes revealed the previously reported increase of aberrant 3' splicing site usage in SF3B1 mut cells. However, the ability to profile splicing within individual cell populations uncovered distinct cryptic 3' splice site usage across different progenitor populations, as well as stage-specific aberrant splicing during erythroid maturation. Lastly, as splice factor mutations occur in clonal hematopoiesis (CH) with increased risk of neoplastic transformation, we applied GoT-Splice to CH samples. These data revealed that the erythroid lineage bias, as well as cell-type specific cryptic 3' splice site usage in SF3B1 mut cells, precede overt MDS. Collectively, we present an expanded multi-omics single-cell toolkit to define the cell-type specific impact of somatic mutations on RNA splicing, from the earliest phases of clonal outgrowths to overt neoplasia, directly in human samples.
-</div>
-<div id="bib_Gaiti2022" class="collapse">
-<b>BibTeX</b>:
-<pre>
-@article{Gaiti2022,
-  author = {Gaiti, Federico and Chamely, Paulina and Hawkins, Allegra G and Cort&eacute;s-L&oacute;pez, Mariela and Swett, Ariel D and Ganesan, Saravanan and Mouhieddine, Tarek H and Dai, Xiaoguang and Kluegel, Lloyd and Chen, Celine and Batta, Kiran and Beaulaurier, John and Drong, Alexander W and Hickey, Scott and Dusaj, Neville and Mullokandov, Gavriel and Su, Jiayu and Chalign&eacute;, Ronan and Juul, Sissel and Harrington, Eoghan and Knowles, David A and Wiseman, Daniel H and Ghobrial, Irene M and Taylor, Justin and Abdel-Wahab, Omar and Landau, Dan A},
-  title = {Single-cell multi-omics defines the cell-type specific impact of splicing aberrations in human hematopoietic clonal outgrowths},
-  journal = {bioRxiv},
-  year = {2022},
-  pages = {2022.06.08.495292},
-  url = {https://www.biorxiv.org/content/10.1101/2022.06.08.495292v1}
-}
-</pre>
-</div>
-</li><li><div id="Su2022"><em>Su J, Reynier J-B, Fu X, Zhong G, Jiang J, Escalante RS, Wang Y, Izar B, Knowles DA and Rabadan R</em> (2022), <strong>"A Unified Modular Framework to Incorporate Structural Dependency in Spatial Omics Data"</strong>, bioRxiv. , pp. 2022.10.25.513785.</div>
+<li><div id="Su2022"><em>Su J, Reynier J-B, Fu X, Zhong G, Jiang J, Escalante RS, Wang Y, Izar B, Knowles DA and Rabadan R</em> (2022), <strong>"A Unified Modular Framework to Incorporate Structural Dependency in Spatial Omics Data"</strong>, bioRxiv. , pp. 2022.10.25.513785.</div>
 <div>[<a data-toggle="collapse" href="#abs_Su2022">Abstract</a>][<a href="#bib_Su2022" data-toggle="collapse">BibTeX</a>] [<a href="https://www.biorxiv.org/content/10.1101/2022.10.25.513785v1.abstract" target="_blank">URL</a>]</div>
 
 <div id="abs_Su2022" class="collapse">
@@ -530,6 +516,24 @@
   journal = {Cell Genomics},
   year = {2023},
   url = {http://www.cell.com/article/S2666979X23001428/abstract}
+}
+</pre>
+</div>
+</li><li><div id="Cortes-Lopez2023-sk"><em>Cort&eacute;s-L&oacute;pez M, Chamely P, Hawkins AG, Stanley RF, Swett AD, Ganesan S, Mouhieddine TH, Dai X, Kluegel L, Chen C, Batta K, Furer N, Vedula RS, Beaulaurier J, Drong AW, Hickey S, Dusaj N, Mullokandov G, Stasiw AM, Su J, Chalign&eacute; R, Juul S, Harrington E, Knowles DA, Potenski CJ, Wiseman DH, Tanay A, Shlush L, Lindsley RC, Ghobrial IM, Taylor J, Abdel-Wahab O, Gaiti F and Landau DA</em> (2023), <strong>"Single-cell multi-omics defines the cell-type-specific impact of splicing aberrations in human hematopoietic clonal outgrowths"</strong>, Cell Stem Cell. </div>
+<div>[<a data-toggle="collapse" href="#abs_Cortes-Lopez2023-sk">Abstract</a>][<a href="#bib_Cortes-Lopez2023-sk" data-toggle="collapse">BibTeX</a>] [<a href="https://www.sciencedirect.com/science/article/pii/S1934590923002576" target="_blank">URL</a>]</div>
+
+<div id="abs_Cortes-Lopez2023-sk" class="collapse">
+	<b>Abstract</b>: Summary RNA splicing factors are recurrently mutated in clonal blood disorders, but the impact of dysregulated splicing in hematopoiesis remains unclear. To overcome technical limitations, we integrated genotyping of transcriptomes (GoT) with long-read single-cell transcriptomics and proteogenomics for single-cell profiling of transcriptomes, surface proteins, somatic mutations, and RNA splicing (GoT-Splice). We applied GoT-Splice to hematopoietic progenitors from myelodysplastic syndrome (MDS) patients with mutations in the core splicing factor SF3B1. SF3B1mut cells were enriched in the megakaryocytic-erythroid lineage, with expansion of SF3B1mut erythroid progenitor cells. We uncovered distinct cryptic 3′ splice site usage in different progenitor populations and stage-specific aberrant splicing during erythroid differentiation. Profiling SF3B1-mutated clonal hematopoiesis samples revealed that erythroid bias and cell-type-specific cryptic 3′ splice site usage in SF3B1mut cells precede overt MDS. Collectively, GoT-Splice defines the cell-type-specific impact of somatic mutations on RNA splicing, from early clonal outgrowths to overt neoplasia, directly in human samples.
+</div>
+<div id="bib_Cortes-Lopez2023-sk" class="collapse">
+<b>BibTeX</b>:
+<pre>
+@article{Cortes-Lopez2023-sk,
+  author = {Cort&eacute;s-L&oacute;pez, Mariela and Chamely, Paulina and Hawkins, Allegra G and Stanley, Robert F and Swett, Ariel D and Ganesan, Saravanan and Mouhieddine, Tarek H and Dai, Xiaoguang and Kluegel, Lloyd and Chen, Celine and Batta, Kiran and Furer, Nili and Vedula, Rahul S and Beaulaurier, John and Drong, Alexander W and Hickey, Scott and Dusaj, Neville and Mullokandov, Gavriel and Stasiw, Adam M and Su, Jiayu and Chalign&eacute;, Ronan and Juul, Sissel and Harrington, Eoghan and Knowles, David A and Potenski, Catherine J and Wiseman, Daniel H and Tanay, Amos and Shlush, Liran and Lindsley, Robert C and Ghobrial, Irene M and Taylor, Justin and Abdel-Wahab, Omar and Gaiti, Federico and Landau, Dan A},
+  title = {Single-cell multi-omics defines the cell-type-specific impact of splicing aberrations in human hematopoietic clonal outgrowths},
+  journal = {Cell Stem Cell},
+  year = {2023},
+  url = {https://www.sciencedirect.com/science/article/pii/S1934590923002576}
 }
 </pre>
 </div>
@@ -1106,7 +1110,7 @@
 <h4>Machine learning/statistics</h4>
 <ol>
 <li><div id="Stirn2023"><em>Stirn A, Wessels H-H, Schertzer M, Pereira L, Sanjana NE and Knowles DA</em> (2023), <strong>"Faithful Heteroscedastic Regression with Neural Networks"</strong>, In 26th International Conference on Artificial Intelligence and Statistics (AISTATS). </div>
-<div>[<a data-toggle="collapse" href="#abs_Stirn2023">Abstract</a>][<a href="#bib_Stirn2023" data-toggle="collapse">BibTeX</a>] [<a href="http://arxiv.org/abs/2212.09184" target="_blank">URL</a>] [<a href="https://github.com/astirn/faithful-heteroscedasticity" target="_blank">Code</a>]</div>
+<div>[<a data-toggle="collapse" href="#abs_Stirn2023">Abstract</a>][<a href="#bib_Stirn2023" data-toggle="collapse">BibTeX</a>] [<a href="http://arxiv.org/abs/2212.09184" target="_blank">URL</a>]</div>
 
 <div id="abs_Stirn2023" class="collapse">
 	<b>Abstract</b>: Heteroscedastic regression models a Gaussian variable's mean and variance as a function of covariates. Parametric methods that employ neural networks for these parameter maps can capture complex relationships in the data. Yet, optimizing network parameters via log likelihood gradients can yield suboptimal mean and uncalibrated variance estimates. Current solutions side-step this optimization problem with surrogate objectives or Bayesian treatments. Instead, we make two simple modifications to optimization. Notably, their combination produces a heteroscedastic model with mean estimates that are provably as accurate as those from its homoscedastic counterpart (i.e. fitting the mean under squared error loss). For a wide variety of network and task complexities, we find that mean estimates from existing heteroscedastic solutions can be significantly less accurate than those from an equivalently expressive mean-only model. Our approach provably retains the accuracy of an equally flexible mean-only model while also offering best-in-class variance calibration. Lastly, we show how to leverage our method to recover the underlying heteroscedastic noise variance.
