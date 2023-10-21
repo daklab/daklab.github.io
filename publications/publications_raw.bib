@@ -1,7 +1,103 @@
 
+@ARTICLE{Isaev2023-ax,
+  title    = "Investigating {RNA} splicing as a source of cellular diversity
+              using a binomial mixture model",
+  author   = "Isaev, Keren and Knowles, David A",
+  abstract = "Alternative splicing (AS) contributes significantly to RNA and
+              protein variability yet its role in defining cellular diversity
+              is not fully understood. While Smart-seq2 offers enhanced
+              coverage across transcripts compared to 10X single cell
+              RNA-sequencing (scRNA-seq), current computational methods often
+              miss the full complexity of AS. Most approaches for single cell
+              based differential splicing analysis focus on simple AS events
+              such as exon skipping, and rely on predefined cell type labels or
+              low-dimensional gene expression representations. This limits
+              their ability to detect more complex AS events and makes them
+              dependent on prior knowledge of cell classifications. Here, we
+              present Leaflet, a splice junction centric approach inspired by
+              Leafcutter, our tool for quantifying RNA splicing variation with
+              bulk RNA-seq. Leaflet is a probabilistic mixture model designed
+              to infer AS-driven cell states without the need for cell type
+              labels. We detail Leaflet's generative model, inference
+              methodology, and its efficiency in detecting differentially
+              spliced junctions. By applying Leaflet to the Tabula Muris brain
+              cell dataset, we highlight cell-state specific splicing patterns,
+              offering a deeper insight into cellular diversity beyond that
+              captured by gene expression alone. ",
+  journal  = "bioRxiv",
+  pages    = "2023.10.17.562774",
+  month    =  oct,
+  year     =  2023,
+  url      = "https://www.biorxiv.org/content/10.1101/2023.10.17.562774v1",
+  language = "en",
+    	Keywords = {Working}
+}
+
+
+@ARTICLE{Brown2023-uc,
+  title    = "Large-scale causal discovery using interventional data sheds
+              light on the regulatory network architecture of blood traits",
+  author   = "Brown, Brielin C and Morris, John A and Lappalainen, Tuuli and
+              Knowles, David A",
+  abstract = "Inference of directed biological networks is an important but
+              notoriously challenging problem. We introduce inverse sparse
+              regression (inspre) , an approach to learning causal networks
+              that leverages large-scale intervention-response data. Applied to
+              788 genes from the genome-wide perturb-seq dataset, inspre helps
+              elucidate the network architecture of blood traits.",
+  journal  = "bioRxiv",
+  pages    = "2023.10.13.562293",
+  month    =  oct,
+  year     =  2023,
+  url      = "https://www.biorxiv.org/content/10.1101/2023.10.13.562293v1",
+  language = "en",
+    	Keywords = {Working}
+}
+
+
+@ARTICLE{Schertzer2023-lb,
+  title    = "Cas13d-mediated isoform-specific {RNA} knockdown with a unified
+              computational and experimental toolbox",
+  author   = "Schertzer, Megan D and Stirn, Andrew and Isaev, Keren and
+              Pereira, Laura and Das, Anjali and Harbison, Claire and Park,
+              Stella H and Wessels, Hans-Hermann and Sanjana, Neville E and
+              Knowles, David A",
+  abstract = "Alternative splicing is an essential mechanism for diversifying
+              proteins, in which mature RNA isoforms produce proteins with
+              potentially distinct functions. Two major challenges in
+              characterizing the cellular function of isoforms are the lack of
+              experimental methods to specifically and efficiently modulate
+              isoform expression and computational tools for complex
+              experimental design. To address these gaps, we developed and
+              methodically tested a strategy which pairs the RNA-targeting
+              CRISPR/Cas13d system with guide RNAs that span exon-exon
+              junctions in the mature RNA. We performed a high-throughput
+              essentiality screen, quantitative RT-PCR assays, and PacBio long
+              read sequencing to affirm our ability to specifically target and
+              robustly knockdown individual RNA isoforms. In parallel, we
+              provide computational tools for experimental design and screen
+              analysis. Considering all possible splice junctions annotated in
+              GENCODE for multi-isoform genes and our gRNA efficacy
+              predictions, we estimate that our junction-centric strategy can
+              uniquely target up to 89\% of human RNA isoforms, including
+              50,066 protein-coding and 11,415 lncRNA isoforms. Importantly,
+              this specificity spans all splicing and transcriptional events,
+              including exon skipping and inclusion, alternative 5' and 3'
+              splice sites, and alternative starts and ends.",
+  journal  = "bioRxiv",
+  pages    = "2023.09.12.557474",
+  month    =  sep,
+  year     =  2023,
+  url      = "https://www.biorxiv.org/content/10.1101/2023.09.12.557474v1",
+  language = "en",
+    	Keywords = {Working}
+}
+
+
+
 @ARTICLE{Wessels2023-ko,
   title     = "Prediction of on-target and off-target activity of
-               {CRISPR--Cas13d} guide {RNAs} using deep learning",
+               {CRISPR-Cas13d} guide {RNAs} using deep learning",
   author    = "Wessels*, Hans-Hermann and Stirn*, Andrew and M{\'e}ndez-Mancilla,
                Alejandro and Kim, Eric J and Hart, Sydney K and Knowles†, David
                A and Sanjana†, Neville E",
@@ -101,7 +197,7 @@
                Wong, Quenna and Papanicolau, George and Blackwell, Thomas W and
                Rotter, Jerome I and Rich, Stephen S and Graham Barr, R and
                Ardlie, Kristin G and Knowles*, David A and Lappalainen*, Tuuli",
-  abstract  = "SummaryMulti-omics datasets are becoming more common,
+  abstract  = "Multi-omics datasets are becoming more common,
                necessitating better integration methods to realize their
                revolutionary potential. Here, we introduce multi-set
                correlation and factor analysis (MCFA), an unsupervised
