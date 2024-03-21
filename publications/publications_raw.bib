@@ -1,38 +1,97 @@
 
-@ARTICLE{Isaev2023-ax,
-  title    = "Investigating {RNA} splicing as a source of cellular diversity
-              using a binomial mixture model",
-  author   = "Isaev, Keren and Knowles, David A",
-  abstract = "Alternative splicing (AS) contributes significantly to RNA and
-              protein variability yet its role in defining cellular diversity
-              is not fully understood. While Smart-seq2 offers enhanced
-              coverage across transcripts compared to 10X single cell
-              RNA-sequencing (scRNA-seq), current computational methods often
-              miss the full complexity of AS. Most approaches for single cell
-              based differential splicing analysis focus on simple AS events
-              such as exon skipping, and rely on predefined cell type labels or
-              low-dimensional gene expression representations. This limits
-              their ability to detect more complex AS events and makes them
-              dependent on prior knowledge of cell classifications. Here, we
-              present Leaflet, a splice junction centric approach inspired by
-              Leafcutter, our tool for quantifying RNA splicing variation with
-              bulk RNA-seq. Leaflet is a probabilistic mixture model designed
-              to infer AS-driven cell states without the need for cell type
-              labels. We detail Leaflet's generative model, inference
-              methodology, and its efficiency in detecting differentially
-              spliced junctions. By applying Leaflet to the Tabula Muris brain
-              cell dataset, we highlight cell-state specific splicing patterns,
-              offering a deeper insight into cellular diversity beyond that
-              captured by gene expression alone. ",
-  journal  = "bioRxiv",
-  pages    = "2023.10.17.562774",
-  month    =  oct,
-  year     =  2023,
-  url      = "https://www.biorxiv.org/content/10.1101/2023.10.17.562774v1",
-  language = "en",
-    	Keywords = {Working}
+@ARTICLE{Stirn2024-qw,
+  title         = "The {VampPrior} Mixture Model",
+  author        = "Stirn, Andrew and Knowles, David A",
+  abstract      = "Current clustering priors for deep latent variable models
+                   (DLVMs) require defining the number of clusters a-priori and
+                   are susceptible to poor initializations. Addressing these
+                   deficiencies could greatly benefit deep learning-based
+                   scRNA-seq analysis by performing integration and clustering
+                   simultaneously. We adapt the VampPrior (Tomczak \& Welling,
+                   2018) into a Dirichlet process Gaussian mixture model,
+                   resulting in the VampPrior Mixture Model (VMM), a novel
+                   prior for DLVMs. We propose an inference procedure that
+                   alternates between variational inference and Empirical Bayes
+                   to cleanly distinguish variational and prior parameters.
+                   Using the VMM in a Variational Autoencoder attains highly
+                   competitive clustering performance on benchmark datasets.
+                   Augmenting scVI (Lopez et al., 2018), a popular scRNA-seq
+                   integration method, with the VMM significantly improves its
+                   performance and automatically arranges cells into
+                   biologically meaningful clusters.",
+  month         =  feb,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2402.04412",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "2402.04412",
+  Keywords = {Working}
 }
 
+
+@ARTICLE{Park2023-yh,
+  title    = "{DIISCO}: A Bayesian framework for inferring dynamic
+              intercellular interactions from time-series single-cell data",
+  author   = "Park, Cameron and Mani, Shouvik and Beltran-Velez, Nicolas and
+              Maurer, Katie and Gohil, Satyen and Li, Shuqiang and Huang, Teddy
+              and Knowles, David A and Wu, Catherine J and Azizi, Elham",
+  journal  = "RECOMB 2024 & under review at Genome Research",
+  abstract = "Characterizing cell-cell communication and tracking its
+              variability over time is essential for understanding the
+              coordination of biological processes mediating normal
+              development, progression of disease, or responses to
+              perturbations such as therapies. Existing tools lack the ability
+              to capture time-dependent intercellular interactions, such as
+              those influenced by therapy, and primarily rely on existing
+              databases compiled from limited contexts. We present DIISCO, a
+              Bayesian framework for characterizing the temporal dynamics of
+              cellular interactions using single-cell RNA-sequencing data from
+              multiple time points. Our method uses structured Gaussian process
+              regression to unveil time-resolved interactions among diverse
+              cell types according to their co-evolution and incorporates prior
+              knowledge of receptor-ligand complexes. We show the
+              interpretability of DIISCO in simulated data and new data
+              collected from CAR-T cells co-cultured with lymphoma cells,
+              demonstrating its potential to uncover dynamic cell-cell
+              crosstalk.",
+  month    =  nov,
+  year     =  2023,
+  url      = "http://dx.doi.org/10.1101/2023.11.14.566956",
+  language = "en", 
+Keywords = {Working}
+}
+
+
+@ARTICLE{Su2023,
+  title    = "Smoother: a unified and modular framework for incorporating
+              structural dependency in spatial omics data",
+  author   = "Su, Jiayu and Reynier, Jean-Baptiste and Fu, Xi and Zhong, Guojie
+              and Jiang, Jiahao and Escalante, Rydberg Supo and Wang, Yiping
+              and Aparicio, Luis and Izar, Benjamin and Knowles, David A and
+              Rabadan, Raul",
+  journal  = "Genome biology",
+  volume   =  24,
+  number   =  1,
+  pages    = "291",
+  month    =  dec,
+  year     =  2023,
+  url      = "http://dx.doi.org/10.1186/s13059-023-03138-x",
+  language = "en",
+Keywords = {Genetics}
+}
+
+@inproceedings{Isaev2023-ax,
+  title    = "Investigating {RNA} splicing as a source of cellular diversity
+              using a binomial mixture model",
+  author   = "Isaev, Keren and Knowles, David A", 
+  booktitle  = "Proceedings of Machine Learning Research: MLCB 2023",
+  abstract = "Alternative splicing (AS) contributes significantly to RNA and protein variability yet its role in defining cellular diversity is not fully understood. While Smart-seq2 offers enhanced coverage across transcripts compared to 10X single cell RNA-sequencing (scRNA-seq), current computational methods often miss the full complexity of AS. Most approaches for single cell based differential splicing analysis focus on simple AS events such as exon skipping, and rely on predefined cell type labels or low-dimensional gene expression representations. This limits their ability to detect more complex AS events and makes them dependent on prior knowledge of cell classifications. Here, we present Leaflet, a splice junction centric approach inspired by Leafcutter, our tool for quantifying RNA splicing variation with bulk RNA-seq. Leaflet is a probabilistic mixture model designed to infer AS-driven cell states without the need for cell type labels. We detail Leaflet’s generative model, inference methodology, and its efficiency in detecting differentially spliced junctions. By applying Leaflet to the Tabula Muris brain cell dataset, we highlight cell-state specific splicing patterns, offering a deeper insight into cellular diversity beyond that captured by gene expression alone.",
+  month    =  oct,
+  year     =  2023,  
+  url      = "https://proceedings.mlr.press/v240/isaev24a.html",
+  language = "en",
+    	Keywords = {Genetics}
+}
 
 @ARTICLE{Brown2023-uc,
   title    = "Large-scale causal discovery using interventional data sheds
