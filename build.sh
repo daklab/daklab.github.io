@@ -4,7 +4,7 @@ cat src/header.html > index.html
 
 cat >>index.html <<EOL
 <section id="working">
-<h4>Working/under submission</h4>
+<h4>Under submission</h4>
 EOL
 
 cat publications/working.html >> index.html
@@ -24,6 +24,14 @@ cat >>index.html <<EOL
 EOL
 
 cat publications/ml.html >> index.html
+
+cat >>index.html <<EOL
+</section>
+<section id="ml">
+<h4>Working</h4>
+EOL
+
+cat publications/old.html >> index.html
 
 cat >>index.html <<EOL
 </section>

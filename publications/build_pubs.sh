@@ -7,3 +7,4 @@ alias  jabref='/Applications/JabRef.app/Contents/MacOS/JabRef --debug'
 jabref -i publications.bib -m "keywords=mlstats",ml.html,website -n &
 jabref -i publications.bib -m "keywords=genetics",genetics.html,website -n &
 jabref -i publications.bib -m "keywords=working",working.html,website -n &
+jabref -i publications.bib -m "keywords=dead",old.html,website -n &

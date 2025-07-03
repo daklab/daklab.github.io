@@ -9,8 +9,9 @@ with open('publications_raw.bib') as bibtex_file:
 
 for i in range(len(bib_database.entries)):
     bib_database.entries[i]["ID"] = bib_database.entries[i]["ID"].replace(".","_")
-    if "month" in bib_database.entries[i]:
-        del bib_database.entries[i]["month"]
+    for to_delete in ["pages", "month", "volume", "number"]: 
+        if to_delete in bib_database.entries[i]:
+            del bib_database.entries[i][to_delete]
     if "abstract" in bib_database.entries[i]:
         bib_database.entries[i]["abstract"] = bib_database.entries[i]["abstract"].replace("  "," ").replace("\n"," ")
         if "Competing Interest Statement" in bib_database.entries[i]["abstract"]: 
