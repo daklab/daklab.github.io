@@ -27,7 +27,7 @@
 	  }
 
 	  p.nextpar {
-		margin-top: -1em;
+		margin-top: 0em;
 		text-indent: 2em;
 		padding: 0 5px 0 5px;
 	  }
@@ -1601,7 +1601,7 @@
 	}
 
 	p {
-		margin: 0 0 2.25em 0;
+		margin: 0 0 0.8em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -1716,7 +1716,7 @@
 	header p {
 		color: #aaa;
 		position: relative;
-		margin: 0 0 1.6875em 0;
+		margin: 0 0 0.5em 0;
 	}
 
 	header h2 + p {

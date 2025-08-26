@@ -57,11 +57,12 @@
 				</header>
 				<nav id="nav">
 					<ul>
-						<!-- <li><a href="#one" class="active">About</a></li> -->
-						<li><a href="#two">People</a></li>
-						<li><a href="#three">Publications</a></li>
-						<li><a href="#four">Software</a></li>
-						<li><a href="#five">Reports/Abstracts/Presentations</a></li>
+						<li><a href="#one">About</a></li>
+						<li><a href="#research">Research</a></li>
+						<li><a href="#people">People</a></li>
+						<li><a href="#publications">Publications</a></li>
+						<li><a href="#software">Software</a></li>
+						<li><a href="#reports">Reports/Abstracts/Presentations</a></li>
 					</ul>
 				</nav>
 				<footer>
@@ -86,9 +87,9 @@
 										<h2>Knowles lab</h2>
 					<p><a href="http://www.nygenome.org/">New York Genome Center</a> / <a href="https://www.columbia.edu/">Columbia University</a></p>
 									</header>
-									<p>The Knowles lab develops and applies machine learning methods for data analysis challenges in genomics. We're particularly interested in understanding the role of transcriptomic dysregulation, especially that involving RNA splicing, across the spectrum from rare to common genetic disease. This involves better characterization of the genetic and environmental factors contributing to mRNA expression and splicing variation. We collaborate with diverse research groups at NYGC and beyond collecting large-scale genomics datasets in the context of <a href="https://rajlab.org/">neurodegenerative</a> and <a href="https://labs.icahn.mssm.edu/mullinslab/">neuropsychiatric</a> disease, and developing <a href="http://www.nygenome.org/lab-groups-overview/technology-innovation-lab/">novel genomic technologies</a> including <a href="https://satijalab.org/">single cell methods</a>, <a href="http://sanjanalab.org/home.html">forward genetic screens</a> and <a href="https://tllab.org/">long-read transcriptomics</a>.</p>
+									<p>We develop and apply machine learning, statistical genetics, and functional genomics methods to dissect the causal chain from genetic variation to trait, especially human disease. We're particularly interested in RNA splicing changes as a molecular mediator of genetic risk. We collaborate with diverse research groups at NYGC and beyond collecting large-scale genomics datasets in the context of <a href="https://rajlab.org/">neurodegenerative</a> and <a href="https://labs.icahn.mssm.edu/mullinslab/">neuropsychiatric</a> disease, and developing <a href="http://www.nygenome.org/lab-groups-overview/technology-innovation-lab/">novel genomic technologies</a> including <a href="https://satijalab.org/">single cell methods</a>, <a href="http://sanjanalab.org/home.html">forward genetic screens</a> and <a href="https://tllab.org/">long-read transcriptomics</a>.</p>
 
-									<p>If you're interested in machine-learning-flavored genomics, statisical genetics, gene regulation and/or RNA splicing, please get in <a href="mailto:daknowles@nygenome.org">touch</a>! We have experimental lab space so that includes wet lab people looking to do damp (mixed computational/experimental) projects. We're also interested in hearing from machine learning/statistics folks who are curious about applying their expertise in genetics/genomics. Postdocs and students are eligible for an appointment at Columbia University.</p>	
+									<p>If you're interested in machine-learning-flavored genomics, statisical genetics, functional genomics and/or RNA splicing, please get in <a href="mailto:daknowles@nygenome.org">touch</a>! Postdocs and students are eligible for an appointment at Columbia University.</p>	
 									
 									<p>David teaches <a href="https://docs.google.com/document/d/1_OF-kEl8Sz69Blj6CjanOIZUTKsGPHUbbiIvLHi20bg/edit?usp=sharing">COMS4762</a>, a computer science class at Columbia on machine learning in genetics (Columbia LionMail account required for access), usually in the fall. With <a href="https://saramostafavi.github.io/">Sara Mostafavi</a> he co-chairs the annual <a href="https://mlcb.github.io/">Machine Learning in Computational Biology</a> meeting (<a href="https://www.youtube.com/@mlcbconf">Youtube channel!</a>).</p>
 										
@@ -111,53 +112,46 @@
 
 
 									
-									<section id="splicing">
-										<div>
-									<h4>RNA splicing</h4>
-									<p>We developed <a href="https://github.com/davidaknowles/leafcutter">LeafCutter</a> to identify, quantify and test variable intron splicing events, obviating the need for accurate transcript annotations and circumventing the challenges in estimating relative isoform abundance (<a href="#LeafCutter">paper</a>). An early version of <em>LeafCutter</em> was used in <a href="#Li2016splicing">our study</a> linking complex disease and splicing. </p>
-								</div>
+									<section id="research">
+											<div>
+												<h2>Research overview</h2>
+<p><b>Quantifying alternative splicing across genotypes, cell-types and disease states.</b> Dr Knowles previously developed <a href="#LeafCutter">LeafCutter</a>, a scalable, flexible approach to quantifying alternative splicing (AS) from bulk  RNA-seq. LeafCutter represents AS via the usage rate of each splice junction relative to a group of neighboring junctions. <a href="#Li2016splicing">We</a> and others have used LeafCutter to show that for typical complex diseases a comparable number of risk variants act through AS vs expression. We are working on tools for <a href="#Isaev2023-ax">single-cell</a>, <a href="#Talukder2025-kx">long-read</a> and <a href="#Su2025-by">spatial</a> AS analysis, as well as <a href="#Schertzer2025-pv">ways to interpret</a> the remarkable isoform complexity of human cells revealed by long-read RNA-seq.</p>
 
-		<div>
-	<h4>CRISPR/Cas13-based methods to study isoform function</h4>
-	<p>A major challenge in characterizing the cellular function of different splice isoforms of a gene is the lack of methods to specifically and efficiently modulate their expression. We are currently developing <a href="Wessels2023-ko">Cas13-based strategies</a> to 1) identify isoforms of the same gene with differential function in a high throughput manner and 2) to investigate the cellular functions of specific isoforms of interest.</p>
-	</div>	
+<p><b>QTL mapping in thousands of brain samples.</b> RNA-seq sample sizes for brain have lagged behind other tissues. With the <a href="https://rajlab.org/">Raj lab</a>we have uniformly processed over 10,000 post-mortem bulk brain RNA-seq samples, a resource we call BigBrain. BigBrain is the largest brain quantitative trait locus (QTL) meta-analysis to date so the resulting QTLs are providing unprecedented resolution to dissect neurological disease GWAS loci. In a parallel effort, <a href="#Jang2025-vj">SingleBrain</a>, we meta-analysed brain single nuclei RNA-seq from ~1000 individuals to map cell-type & state specific expression QTLs.</p>
 
-		<div>
-	<h4>Variant effects on RBP binding and splicing</h4>
-<p>Large sequencing consortia have identified thousands of genetic variants that are associated with splicing changes: splicing quantitative trait loci (sQTL). However, the causal variants and their intermediate molecular effects are largely unclear, although it is expected that many sQTLs function by altering binding of one or more RNA binding proteins (RBPs). We have several wet/dry lab projects trying to understand how non-coding variants affect RBP (especially splice factors) binding and, ultimately, splicing.</p>
-</div>	
+<p><b>Deep learning models of gene regulation for variant effect prediction.</b>QTL mapping is only practical for common genetic variants and cell-types/states. Deep learning (DL) models trained to predict chromatin marks, expression or splicing, from DNA sequence alone, require data from only a few individuals. Dr Knowles was involved in developing <a href="#Jaganathan2019-kb">SpliceAI</a>, one of the earlier methods using modern DL to do this, specifically for splice sites. The predicted difference between the reference and alternate alleles (delta scores) can be powerful predictors of variant effects, even for previously unseen variants. As part of the <a href="https://adsp.niagads.org/">Alzheimer's Disease Sequencing Project</a> (ADSP) we are training and assessing DL models of chromatin accessibility, histone modifications and splicing in AD relevant cell types. Delta scores for microglial chromatin accessibility are strongly enriched in AD GWAS and <a href="#Lakhani2025-fs">enable improved functional fine-mapping</a>. We developed <a href="#Das2025-uy">new rare variant association models</a> to leverage these delta scores and find new genetic associations with AD. </p>
 
-<div>
-	<h4>Causal inference in genetics</h4>
-<p>We're interested in designing statistical methods to infer causal relationships amongst traits and molecular phenotypes. For example, we developed <a href="#Brown2021">Welch-weighted Egger regression</a> to efficiently control for correlated pleiotropy (that is, a heritable confounding factor) in Mendelian randomization. We are working on <a href="#Brown2020">approaches</a> to infer direct causal effects from total causal effect estimates in high-dimensional settings.</p>
-</div>	
+<p><b>Causal gene regulatory network inference.</b> DL models and cis QTL mapping help link molecular changes to disease but don't model how these effects propagate through the gene regulatory network (GRN). Building on <a href="#Brown2021">our earlier work</a> on robust, scalable Mendelian randomization, we developed <a href="#Brown2023-uc">inverse sparse regression</a>, which deconvolves an estimated total causal effect network into direct and indirect effects using a directed analogue of the graphical lasso. We are applying inspre to trans-eQTLs from BigBrain and neurological GWAS to map how genetic effects propagate through the GRN to impact disease risk. To adapt these ideas to the nonlinear, multiple cell-type setting we have <a href="#Lin2025-gg">developed</a> and <a href="#Zweig2025-cd">theoretically characterized</a> differential equation models of cellular dynamics.</p>
+
+<p><b>Experimental characterization of isoform function.</b> It is currently challenging to characterise the function of putative disease relevant isoforms. To address this, we developed a <a href="#Schertzer2023-lb">strategy targeting unique exon-exon junctions</a> in mature RNA with CRISPR/Cas13d to knockdown specific isoforms and, in collaboration with the <a href="https://www.nygenome.org/science-technology/faculty-labs/sanjana-lab/">Sanjana lab</a>, a DL model, <a href="#Wessels2023-ko">TIGER</a>, to predict guide RNA efficacy for this system. </p>
+</div>
+
+<p><b>Foundational machine learning.</b> We also work on foundational ML, most recently on <a href="#Su2024-ou">kernel-based latent subspace analysis</a>, <a href="#Stirn2024-qw">principled priors for variational autoencoders</a>, and <a href="#Stirn2023">heteroskedastic regression</a>.</p>
+
 </section> 
-								<section id="eagle"> <div>
-								<h4>Genetic differences in environmental response</h4>
-								<p>Phenotypic variation results from the interplay of genotype and environment: genetic variation can modulate the transcriptomic response to perturbation. However, detecting gene by environment (GxE) effects on the transcriptome is challenging in observational data. We developed <a href="#Knowles2017gxe">EAGLE</a> to leverages allele-specific expression as a controlled, with-in individual test of the influence of environment factors on different genetic backgrounds. Another approach is direct in vitro perturbation of cells, which can greatly increase power to detect GxE due to increased effect sizes and controlled conditions. We used human iPSC-derived somatic cells to understand the genetic basis of anthracycline-cardiotoxicity (ACT), a common side-effect of chemotherapy. We measured transcriptomic and cellular damage response in a panel of iPSC-derived cardiomyocytes from 45 individuals. Using a novel, efficient linear mixed model, <a href="https://github.com/davidaknowles/suez">suez</a>, we identified hundreds of loci that interact with ACT response and which are enriched in ACT GWAS (<a href="#Knowles2018dox">paper</a>). </p>
-								 </div> </section>
-
-								 <section id="vb"> <div>
+								 <!--
+<section id="vb"> <div>
 									<h4>Variational methods</h4>
+									
 									<p>Variational methods offer a computationally efficient alternative to Markov chain Monte Carlo algorithms for inference in Bayesian probabilistic models. My work allows such methods to be more easily applied to a broader range of probabilistic models. I extended variational message passing to "non-conjugate" (intuitively, less tractable) models, and incorporated this method, <a href="#Knowles2011c">Non-conjugate VMP</a> (NCVMP), into the publicly available <a href="http://infernet.azurewebsites.net/">Infer.NET</a> software package. Later, Tim Salimans and I did early work on <a href='#salimans2014using'>using Monte Carlo estimation within variational learning</a>, which is now an active subfield of research under the moniker "Stochastic Variational Inference".</p>
 	</div> </section>
 								 
 							<section id="bnp"> <div>
 							<h4>Bayesian nonparametric models</h4>
 							<p>Bayesian nonparametric (BNP) models are a category of statistical methods that automatically adapt their complexity to observed data. I have developed BNP methods for <a href="#Knowles2014">hierarchical clustering</a>, <a href="#wilson2011gaussian">heteroskedastic multivariate regression</a>, <a href="#palla2012infinite">network data</a>, <a href="#Palla2012nonparametric">variable clustering</a> and <a href='#Knowles2011nonparametric'>nonparametric sparse factor analysis</a> (NSFA). In particular, NSFA is able to adaptively choose an appropriate number of factors from data. I used this method to delineate gene co-expression modules from microarray data, and other researchers have subsequently used it in diverse applications including image denoising and EEG analysis.</p>
-</div> </section>
+</div> </section> -->
 								
 
 								</div>
 							</section>
 
 						<!-- Two -->
-							<section id="two">
+							<section id="people">
 								<div class="container">
 									<h2>People</h2>
               <section id="david"> <div>
 								<h4>David A. Knowles, Principal Investigator</h4>
-							<div><span class="image face"><img src="images/avatar.jpg" alt="Profile pic" width="150"></span></div><p>I was a postdoc at Stanford with <a href="http://med.stanford.edu/plevritis.html">Sylvia Plevritis</a> (Computational Systems Biology/Radiology) and <a href="http://pritchardlab.stanford.edu/">Jonathan Pritchard</a> (Genetics) having previously worked with <a href="http://ai.stanford.edu/~koller/">Daphne Koller</a>. I did my PhD with <a href="http://learning.eng.cam.ac.uk/zoubin/">Zoubin Ghahramani</a> in the <a href="http://mlg.eng.cam.ac.uk/">Machine Learning</a> group of the Cambridge University Engineering Department, where I worked on <a href='#Knowles2011nonparametric'>Bayesian non-parametric models</a> and <a href='#salimans2014using'>(stochastic)</a> <a href="#Knowles2011c">variational inference</a>. I was the Roger Needham Scholar at Wolfson College, funded by Microsoft Research. My undergraduate degree comprised two years of Physics before switching to Engineering to complete an MEng with Zoubin. I took the <a href="http://www.bioinformatics.ic.ac.uk/">MSc Bioinformatics and Systems Biology</a> at <a href="http://www3.imperial.ac.uk/">Imperial College</a> in 2007/8. You can download my <a href="documents/david-knowles-resume.pdf">CV</a>. </p> 
+							<div><span class="image face"><img src="images/avatar.jpg" alt="Profile pic" width="150"></span></div><p>I was a postdoc at Stanford with <a href="http://med.stanford.edu/plevritis.html">Sylvia Plevritis</a> (Computational Systems Biology/Radiology) and <a href="http://pritchardlab.stanford.edu/">Jonathan Pritchard</a> (Genetics) having previously worked with <a href="http://ai.stanford.edu/~koller/">Daphne Koller</a>. Apart from working on splicing (see above), I developed <a href="#Knowles2017gxe">EAGLE</a> to detect gene-by-environment (GxE) effects on the transcriptomic using allele-specific expression and a novel, efficient linear mixed model, <a href="https://github.com/davidaknowles/suez">suez</a> which we used to ls to understand the <a href="#Knowles2018dox">genetic basis of anthracycline-cardiotoxicity</a> using iPSC-derived cardiomyocytes. I did my PhD with <a href="http://learning.eng.cam.ac.uk/zoubin/">Zoubin Ghahramani</a> in the <a href="http://mlg.eng.cam.ac.uk/">Machine Learning</a> group of the Cambridge University Engineering Department, where I worked on <a href='#Knowles2011nonparametric'>Bayesian non-parametric models</a> and <a href='#salimans2014using'>(stochastic)</a> <a href="#Knowles2011c">variational inference</a>. I was the Roger Needham Scholar at Wolfson College, funded by Microsoft Research. My undergraduate degree comprised two years of Physics before switching to Engineering to complete an MEng with Zoubin. I took the <a href="http://www.bioinformatics.ic.ac.uk/">MSc Bioinformatics and Systems Biology</a> at <a href="http://www3.imperial.ac.uk/">Imperial College</a> in 2007/8. <a href="documents/david-knowles-resume.pdf">CV</a>. </p>
 							</div> </section>
 						
 						<section id="staff"> <div>
@@ -174,17 +168,17 @@
   <div><span class="image face"><img src="images/saikat.jpg" alt="saikat" width="150"></span></div><p>Saikat is passionate about understanding the regulatory mechanism of complex diseases. He specializes in developing statistical (Bayesian) methods and computational algorithms for analyzing large-scale multimodal NGS data. Currently, he focuses on studying the network effects of neuropsychiatric disorders. Before joining NYGC, he worked on developing fast Bayesian algorithms as a postdoctoral fellow in the group of Matthew Stephens at the University of Chicago. Previously, he worked at the Max Planck Institute for Multidisciplinary Sciences, Göttingen, with Johannes Söding, developing Bayesian methods for fine mapping and detecting trans-eQTLs. Saikat earned his Ph.D. in computational biophysics. Beyond his work, he enjoys history, philosophy, board games, fountain pen restoration, camping, hiking, and arthouse films. His personal website is <a href="https://saik.at">here</a>.</p>
 </div> </section>
 
-							</div> </section> <!-- End staff -->
-							
-						<section id="postdocs"> <div>
-						 	<h3>Postdocs</h3>
-			  
 			  <section id="megan"> <div>
 				<h4>Megan Schertzer</h4>
-			<div><span class="image face"><img src="images/megan.jpg" alt="Megan" width="150"></span></div><p>Megan joined the Knowles Lab as a postdoctoral research associate in 2019. She is interested in integrating human genomics and molecular biology to better understand the role of non-coding RNA in the brain. She originally completed a BS in biochemistry from Lee University in Tennessee, and obtained her PhD under the mentorship of Mauro Calabrese at UNC-Chapel Hill. There, she led a project to study how cis-acting long non-coding RNAs efficiently target and spread Polycomb Repressive Complexes to compact chromatin and repress nearby gene expression. Outside of the lab, she enjoys hiking, playing volleyball, and eating Mexican food.</p> 
-</div> </section>
+			<div><span class="image face"><img src="images/megan.jpg" alt="Megan" width="150"></span></div><p>Megan was a postdoc in the Knowles Lab from 2019 to 2025. She's now a senior scientist jointly with our collaborator <a href="https://med.virginia.edu/sheynkman-lab/">Gloria Sheynkman</a>. She is interested in integrating human genomics and molecular biology to better understand the role of non-coding RNA in the brain. She originally completed a BS in biochemistry from Lee University in Tennessee, and obtained her PhD under the mentorship of Mauro Calabrese at UNC-Chapel Hill. There, she led a project to study how cis-acting long non-coding RNAs efficiently target and spread Polycomb Repressive Complexes to compact chromatin and repress nearby gene expression. Outside of the lab, she enjoys hiking, playing volleyball, and eating Mexican food.</p> 
+</div> </section> <!-- End Megan -->
+
+							</div> </section> <!-- End staff -->
+							
 
 
+						<section> <div>
+						 	<h3>Postdocs</h3>
       
 <section id="scott"> <div>
 	<h4>Scott Adamson</h4>
@@ -240,11 +234,6 @@
 <div><span class="image face"><img src="images/anjali.jpg" alt="anjali" width="150"></span></div><p>Anjali joined the Knowles lab as a PhD student in Computer Science at Columbia University at the start of 2022. Her research interest lies in building and applying machine learning methods to better understand how genetic factors contribute to disease. Anjali graduated from the University of Chicago in 2020 with a BS in Statistics and a minor in computer science, where she researched the genetic basis of Alzheimer’s disease in the Hutterite population. After graduating, she worked as a data scientist at UChicago’s Research Computing Center. In her spare time, she enjoys knitting and hiking.</p> 
 </div> </section> <!-- End anjali -->
 
-<section id="karin"> <div>
-	<h4>Karin Isaev</h4>
-<div><span class="image face"><img src="images/karin.jpg" alt="karin" width="150"></span></div><p>Karin is a PhD student in the Systems Biology department at Columbia University Medical Center. She completed her Bachelor and Master's of Science degrees at the University of Toronto where she studied non-coding RNA expression in cancer. At the Knowles lab, Karin is excited to apply machine learning methods to improve our understanding of complex RNA regulation processes and their dysregulation in disease. Outside of the lab, Karin enjoys exploring the art and music scenes in New York and bouldering at the Cliffs.</p> 
-</div> </section> <!-- End karin -->
-
 <section id="sei"> <div>
 	<h4>Sei Chang</h4>
 <div><span class="image face"><img src="images/sei.jpg" alt="sei" width="150"></span></div><p>Sei is a CS PhD student and NSF Graduate Research Fellow at Columbia University. He is interested in applying deep learning techniques to analyze transcriptomic dysregulation in genetic diseases. Prior to Columbia, Sei graduated from the University of California, Los Angeles in 2022 with a BS in Computer Science and a Minor in Bioinformatics. At UCLA Computational Medicine, he worked on comprehensive benchmarking of structural variant callers. He previously interned at Illumina, developing computational methods for primary analysis in their NGS data pipeline.</p> 
@@ -260,30 +249,10 @@
 <div><span class="image face"><img src="images/argha.jpg" alt="argha" width="150"></span></div><p>Argha is a Computer Science PhD student and NSF CSGrad4US fellow at Columbia University co-advised by Itsik Pe'er. Her research focuses on applying machine learning and statistical modeling to study splicing regulation and isoforms. She completed her bachelors in Electrical Engineering at Texas A&M University where she explored protein interaction prediction using deep learning models. Following graduation, she worked for two years as a Test and Product Engineer at Texas Instruments in Dallas. In her free time, Argha enjoys watching films in different languages, using the experience to learn new language skills.</p> 
 </div> </section> <!-- End Argha -->
 
-
-
-
-
 			</div> </section> <!-- End PhD -->
-			
-			
-			<section id="mscs"> <div>
+
+						<section id="mscs"> <div>
 				<h3>Masters students</h3>
-
-				   <section id="xingpei"> <div>
-					<h4>Xingpei Zhang</h4>
-				<div><span class="image face"><img src="images/xingpei.jpg" alt="Xingpei" width="150"></span></div><p>Xingpei is an MS student in Computer Science at Columbia University. He received his BA in Biology with minors in Computer Science and Economics from Boston University, where he studied the differential usage of alternative first and last exons across cell lines. He is interested in applying machine learning methods to further understand gene regulation mechanisms. After work and study, he enjoys cooking, photography, and running.</p> 
-				   </div> </section> <!-- End xingpei -->
-
-				   <section id="ting"> <div>
-					<h4>Ting Chen</h4>
-				<div><span class="image face"><img src="images/ting.jpg" alt="Ting" width="150"></span></div><p>Ting is a MS student in Computer Science at Columbia University. He received his BS in Computer Science and Mathematical Economics from the University of Richmond where he worked on argument mining systems within the field of natural language processing. He has also worked as a machine learning software engineer, focused on recommender systems. Currently he is interested in applying Bayesian methods and deep learning to genomics, in particular to alternative splicing and variant effect prediction. Outside of the lab, Ting enjoys hiking, swimming, and cooking.</p> 
-				   </div> </section> <!-- End ting -->
-
-				   <section id="zach"> <div>
-					<h4>Zaikang (Zach) Lin</h4>
-				<div><span class="image face"><img src="images/zach.jpg" alt="Zach" width="150"></span></div><p>Zaikang (Zach) is an MS student in Applied Mathematics at Columbia University. He is interested in gene regulatory networks (GRNs) and their representations in dynamical systems. He constantly deepens his knowledge in biology while exploring various other methods in statistical machine learning and partial differential equations (PDEs) as applied to genomics. Under the guidance of Dr. Knowles, Zach is developing an interpretable Neural ODE approach for causal GRN discovery in close collaboration with Sei, Aaron, and Dr. Elham Azizi. Prior to joining Knowles lab, he graduated cum laude with a BS in Mathematics and a minor in Computer Science from Columbia University, focusing on analysis and PDEs. Outside of the lab, Zach enjoys reading in Central Park on a warm, sunny day. He also likes running, skiing, cooking Chinese food, and playing soccer.</p> 
-				   </div> </section> <!-- End zach -->
 
 				   <section id="julia"> <div>
 					<h4>Julia Lewandowski</h4>
@@ -307,8 +276,6 @@
 			<div><span class="image face"><img src="images/stella.jpg" alt="Stella" width="150"></span></div><p>Stella joined the lab in Spring 2022 as an undergraduate research assistant. She is studying Biomedical Engineering at Columbia University. As a C.P. Davis Scholar, she is also a member of Columbia Undergraduate Scholars Program. She assists the research project analyzing long read RNA-seq data to identify novel isoforms of RNA binding proteins and exploring their molecular mechanisms in cells. In her free time, Stella enjoys skateboarding in Central Park and exploring great food places of NYC.</p> 
 </div> </section> <!-- End stella -->
 
-
-
 <section id="gill"> <div>
 	<h4>Gill Bartels-Quansah</h4>
 <div><span class="image face"><img src="images/gill.jpg" alt="Gill" width="150"></span></div><p>Gill is an undergraduate student at Barnard College majoring in Computer Science and minoring in English and Science and Public Policy. She is interested in the underlying algorithmic biases in machine learning and its effects on the field of genomics. She is currently studying the role of RNA binding proteins in Alzheimer's Disease using deep learning models. In addition, Gill is interested in the intersection between racial justice, art, and technology which she pursues through her work with Arts and Resistance Through Education (ARTE) and as a Writing Fellow at Barnard. In her free time, Gill enjoys singing with her a cappella group, crocheting, and exploring the city for artsy bookstores.</p> 
@@ -324,9 +291,29 @@
        <section id="Alumni"> <div>
 				<h3>Alumni</h3>
 
+<section id="karin"> <div>
+	<h4>Karin Isaev</h4>
+<div><span class="image face"><img src="images/karin.jpg" alt="karin" width="150"></span></div><p>Karin was a PhD student in the Systems Biology department at Columbia University Medical Center. She completed her Bachelor and Master's of Science degrees at the University of Toronto where she studied non-coding RNA expression in cancer. At the Knowles lab, Karin is excited to apply machine learning methods to improve our understanding of complex RNA regulation processes and their dysregulation in disease. Outside of the lab, Karin enjoys exploring the art and music scenes in New York and bouldering at the Cliffs. Karin is now a research scientist at Pioneer Labs.</p> 
+</div> </section> <!-- End karin -->
+
+				   <section id="xingpei"> <div>
+					<h4>Xingpei Zhang</h4>
+				<div><span class="image face"><img src="images/xingpei.jpg" alt="Xingpei" width="150"></span></div><p>Xingpei was an MS student in Computer Science at Columbia University. He received his BA in Biology with minors in Computer Science and Economics from Boston University, where he studied the differential usage of alternative first and last exons across cell lines. He is interested in applying machine learning methods to further understand gene regulation mechanisms. After work and study, he enjoys cooking, photography, and running. Xingpei is now a PhD student in Systems Biology at Columbia. </p> 
+				   </div> </section> <!-- End xingpei -->
+
+				   <section id="ting"> <div>
+					<h4>Ting Chen</h4>
+				<div><span class="image face"><img src="images/ting.jpg" alt="Ting" width="150"></span></div><p>Ting was a MS student in Computer Science at Columbia University. He received his BS in Computer Science and Mathematical Economics from the University of Richmond where he worked on argument mining systems within the field of natural language processing. He has also worked as a machine learning software engineer, focused on recommender systems. Currently he is interested in applying Bayesian methods and deep learning to genomics, in particular to alternative splicing and variant effect prediction. Outside of the lab, Ting enjoys hiking, swimming, and cooking. Ting is now a statistics PhD student at Columbia. </p> 
+				   </div> </section> <!-- End ting -->
+
+				   <section id="zach"> <div>
+					<h4>Zaikang (Zach) Lin</h4>
+				<div><span class="image face"><img src="images/zach.jpg" alt="Zach" width="150"></span></div><p>Zaikang (Zach) was an MS student in Applied Mathematics at Columbia University. He is interested in gene regulatory networks (GRNs) and their representations in dynamical systems. He constantly deepens his knowledge in biology while exploring various other methods in statistical machine learning and partial differential equations (PDEs) as applied to genomics. Under the guidance of Dr. Knowles, Zach is developing an interpretable Neural ODE approach for causal GRN discovery in close collaboration with Sei, Aaron, and Dr. Elham Azizi. Prior to joining Knowles lab, he graduated cum laude with a BS in Mathematics and a minor in Computer Science from Columbia University, focusing on analysis and PDEs. Outside of the lab, Zach enjoys reading in Central Park on a warm, sunny day. He also likes running, skiing, cooking Chinese food, and playing soccer. Zach is now a PhD student with Fabian Theis at Helmholtz Munich.</p> 
+				   </div> </section> <!-- End zach -->
+
                <section id="andrew"> <div>
 								<h4>Andrew Stirn</h4>
-							<div><span class="image face"><img src="images/andrew.jpg" alt="Andrew" width="150"></span></div><p>Andrew is a PhD student in the Computer Science Program at Columbia University, where he recently completed his Master’s degree. He is broadly interested in developing deep variational Bayesian inference techniques with an eye for biological applications. Prior to Columbia, he was designing sensors, embedded systems, and algorithms for consumer wearable technologies and has taken several products to market. During this time, he developed a passion for research and machine learning that compelled his return to graduate school. He received a BSc in Electrical Engineering from Johns Hopkins University in 2008. Andrew is an avid telemark skier. When there is no snowy mountain to be found, he is on his bike preparing for when there will be.</p>
+							<div><span class="image face"><img src="images/andrew.jpg" alt="Andrew" width="150"></span></div><p>Andrew was a PhD student in the Computer Science Program at Columbia University, where he also completed his Master’s degree. He is broadly interested in developing deep variational Bayesian inference techniques with an eye for biological applications. Prior to Columbia, he was designing sensors, embedded systems, and algorithms for consumer wearable technologies and has taken several products to market. During this time, he developed a passion for research and machine learning that compelled his return to graduate school. He received a BSc in Electrical Engineering from Johns Hopkins University in 2008. Andrew is an avid telemark skier. When there is no snowy mountain to be found, he is on his bike preparing for when there will be.</p>
         </div> </section> <!-- End Andrew -->
 
   <section id="teresa"> <div>
@@ -412,7 +399,7 @@
 							</div> </section>
 
 						<!-- Three -->
-							<section id="three">
+							<section id="publications">
 								<div class="container">
 									<h3>Publications</h3>
 									<ul class="feature-icons">
@@ -549,24 +536,6 @@
 }
 </pre>
 </div>
-</li><li><div id="O-Connell2024-lh"><em>O'Connell S, Brown BC, Cannon DM, Broin PÓ, Knowles DA, Parker N, Alnæs D, Westlye LT, Banerjee S, Nabulsi L, Corley E, Andreassen OA and Mullins N</em> (2024), <strong>"Deriving Mendelian Randomization-based causal networks of brain imaging phenotypes and bipolar disorder"</strong>, medRxiv. </div>
-<div>[<a data-toggle="collapse" href="#abs_O-Connell2024-lh">Abstract</a>][<a href="#bib_O-Connell2024-lh" data-toggle="collapse">BibTeX</a>] [<a href="https://www.medrxiv.org/content/10.1101/2024.12.12.24318953v1" target="_blank">URL</a>]</div>
-
-<div id="abs_O-Connell2024-lh" class="collapse">
-	<b>Abstract</b>: Neuroanatomical variation in individuals with bipolar disorder (BD) has been previously described in observational studies. However, the causal dynamics of these relationships remain unexplored. We performed Mendelian Randomization of 297 structural and functional neuroimaging phenotypes from the UK BioBank and BD using genome-wide association study summary statistics. We found 28 significant causal relationship pairs after multiple testing corrections containing BD as a term, 27 of which described neuroimaging phenotype effects on BD. We applied an inverse sparse regression algorithm to estimate the direct effect of phenotypes conditional on all other causal effects, finding that white matter tract phenotypes have larger absolute effects on BD than vice versa. We found that white matter phenotypes have significantly larger out-degrees than non-white matter tract phenotypes, and that the effect of neuroimaging variation on BD is larger than vice versa. Our results provide support for the hypothesis that neuroanatomical variation, specifically in white matter tracts such as the superior and inferior longitudinal fasciculi, is a cause rather than a consequence of BD.
-</div>
-<div id="bib_O-Connell2024-lh" class="collapse">
-<b>BibTeX</b>:
-<pre>
-@article{O-Connell2024-lh,
-  author = {O'Connell, Shane and Brown, Brielin C and Cannon, Dara M and Broin, Pilib Ó and Knowles, David A and Parker, Nadine and Alnæs, Dag and Westlye, Lars T and Banerjee, Saikat and Nabulsi, Leila and Corley, Emma and Andreassen, Ole A and Mullins, Niamh},
-  title = {Deriving Mendelian Randomization-based causal networks of brain imaging phenotypes and bipolar disorder},
-  journal = {medRxiv},
-  year = {2024},
-  url = {https://www.medrxiv.org/content/10.1101/2024.12.12.24318953v1}
-}
-</pre>
-</div>
 </li><li><div id="Moses2025-kh"><em>Moses AM, Stajich JE, Gasch AP and Knowles DA</em> (2025), <strong>"Inferring fungal cis-regulatory networks from genome sequences"</strong>, bioRxiv. </div>
 <div>[<a data-toggle="collapse" href="#abs_Moses2025-kh">Abstract</a>][<a href="#bib_Moses2025-kh" data-toggle="collapse">BibTeX</a>] [<a href="https://www.biorxiv.org/content/10.1101/2025.02.27.640643.abstract" target="_blank">URL</a>]</div>
 
@@ -680,8 +649,26 @@
 }
 </pre>
 </div>
-</li><li><div id="Das2025-uy"><em>Das A, Lakhani C, Terwagne C, Lin J-ST, Naito T, Raj T and Knowles DA</em> (2025), <strong>"Leveraging functional annotations to map rare variants associated with Alzheimer's disease with gruyere"</strong>, To appear in the American Journal of Human Genetics. </div>
-<div>[<a data-toggle="collapse" href="#abs_Das2025-uy">Abstract</a>][<a href="#bib_Das2025-uy" data-toggle="collapse">BibTeX</a>] [<a href="https://www.medrxiv.org/content/10.1101/2024.12.06.24318577v2" target="_blank">URL</a>]</div>
+</li><li><div id="O-Connell2024-lh"><em>O'Connell S, Brown BC, Cannon DM, Broin PÓ, Knowles DA, Parker N, Alnæs D, Westlye LT, Banerjee S, Nabulsi L, Corley E, Andreassen OA and Mullins N</em> (2024), <strong>"Deriving Mendelian Randomization-based causal networks of brain imaging phenotypes and bipolar disorder"</strong>, Biological Psychiatry: Cognitive Neuroscience and Neuroimaging. </div>
+<div>[<a data-toggle="collapse" href="#abs_O-Connell2024-lh">Abstract</a>][<a href="#bib_O-Connell2024-lh" data-toggle="collapse">BibTeX</a>] [<a href="https://doi.org/10.1016/j.bpsc.2025.07.010" target="_blank">URL</a>]</div>
+
+<div id="abs_O-Connell2024-lh" class="collapse">
+	<b>Abstract</b>: Neuroanatomical variation in individuals with bipolar disorder (BD) has been previously described in observational studies. However, the causal dynamics of these relationships remain unexplored. We performed Mendelian Randomization of 297 structural and functional neuroimaging phenotypes from the UK BioBank and BD using genome-wide association study summary statistics. We found 28 significant causal relationship pairs after multiple testing corrections containing BD as a term, 27 of which described neuroimaging phenotype effects on BD. We applied an inverse sparse regression algorithm to estimate the direct effect of phenotypes conditional on all other causal effects, finding that white matter tract phenotypes have larger absolute effects on BD than vice versa. We found that white matter phenotypes have significantly larger out-degrees than non-white matter tract phenotypes, and that the effect of neuroimaging variation on BD is larger than vice versa. Our results provide support for the hypothesis that neuroanatomical variation, specifically in white matter tracts such as the superior and inferior longitudinal fasciculi, is a cause rather than a consequence of BD.
+</div>
+<div id="bib_O-Connell2024-lh" class="collapse">
+<b>BibTeX</b>:
+<pre>
+@article{O-Connell2024-lh,
+  author = {O'Connell, Shane and Brown, Brielin C and Cannon, Dara M and Broin, Pilib Ó and Knowles, David A and Parker, Nadine and Alnæs, Dag and Westlye, Lars T and Banerjee, Saikat and Nabulsi, Leila and Corley, Emma and Andreassen, Ole A and Mullins, Niamh},
+  title = {Deriving Mendelian Randomization-based causal networks of brain imaging phenotypes and bipolar disorder},
+  journal = {Biological Psychiatry: Cognitive Neuroscience and Neuroimaging},
+  year = {2024},
+  url = {https://doi.org/10.1016/j.bpsc.2025.07.010}
+}
+</pre>
+</div>
+</li><li><div id="Das2025-uy"><em>Das A, Lakhani C, Terwagne C, Lin J-ST, Naito T, Raj T and Knowles DA</em> (2025), <strong>"Leveraging functional annotations to map rare variants associated with Alzheimer's disease with gruyere"</strong>, American Journal of Human Genetics. </div>
+<div>[<a data-toggle="collapse" href="#abs_Das2025-uy">Abstract</a>][<a href="#bib_Das2025-uy" data-toggle="collapse">BibTeX</a>] [<a href="https://www.sciencedirect.com/science/article/abs/pii/S0002929725002861" target="_blank">URL</a>]</div>
 
 <div id="abs_Das2025-uy" class="collapse">
 	<b>Abstract</b>: The increasing availability of whole-genome sequencing (WGS) has begun to elucidate the contribution of rare variants (RVs), both coding and non-coding, to complex disease. Multiple RV association tests are available to study the relationship between genotype and phenotype, but most are restricted to per-gene models and do not fully leverage the availability of variant-level functional annotations. We propose Genome-wide Rare Variant EnRichment Evaluation (gruyere), a Bayesian probabilistic model that complements existing methods by learning global, trait-specific weights for functional annotations to improve variant prioritization. We apply gruyere to WGS data from the Alzheimer's Disease (AD) Sequencing Project, consisting of 7,966 cases and 13,412 controls, to identify AD-associated genes and annotations. Growing evidence suggests that disruption of microglial regulation is a key contributor to AD risk, yet existing methods have not had sufficient power to examine rare non-coding effects that incorporate such cell-type specific information. To address this gap, we 1) use predicted enhancer and promoter regions in microglia and other potentially relevant cell types (oligodendrocytes, astrocytes, and neurons) to define per-gene non-coding RV test sets and 2) include cell-type specific variant effect predictions (VEPs) as functional annotations. gruyere identifies 15 significant genetic associations not detected by other RV methods and finds deep learning-based VEPs for splicing, transcription factor binding, and chromatin state are highly predictive of functional non-coding RVs. Our study establishes a novel and robust framework incorporating functional annotations, coding RVs, and cell-type associated non-coding RVs, to perform genome-wide association tests, uncovering AD-relevant genes and annotations.
@@ -692,9 +679,9 @@
 @article{Das2025-uy,
   author = {Das, Anjali and Lakhani, Chirag and Terwagne, Chloé and Lin, Jui-Shan T and Naito, Tatsuhiko and Raj, Towfique and Knowles, David A},
   title = {Leveraging functional annotations to map rare variants associated with Alzheimer's disease with gruyere},
-  journal = {To appear in the American Journal of Human Genetics},
+  journal = {American Journal of Human Genetics},
   year = {2025},
-  url = {https://www.medrxiv.org/content/10.1101/2024.12.06.24318577v2}
+  url = {https://www.sciencedirect.com/science/article/abs/pii/S0002929725002861}
 }
 </pre>
 </div>
@@ -1890,7 +1877,7 @@
 							</section>
 
 						<!-- Four -->
-							<section id="four">
+							<section id="software">
 								<div class="container">
 									<h3>Software</h3>
 						 
@@ -1918,7 +1905,7 @@ Code from older projects:
 								</div>
 							</section>
 
-							<section id="five">
+							<section id="reports">
 								<div class="container">
 									
 										<h3>Reports/Abstracts/Presentations</h3>
