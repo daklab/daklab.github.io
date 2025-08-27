@@ -119,7 +119,7 @@
 
 <p><b>QTL mapping in thousands of brain samples.</b> RNA-seq sample sizes for brain have lagged behind other tissues. With the <a href="https://rajlab.org/">Raj lab</a> we have uniformly processed over 10,000 post-mortem bulk brain RNA-seq samples, a resource we call BigBrain. BigBrain is the largest brain quantitative trait locus (QTL) meta-analysis to date so the resulting QTLs are providing unprecedented resolution to dissect neurological disease GWAS loci. In a parallel effort, <a href="#Jang2025-vj">SingleBrain</a>, we meta-analysed brain single nuclei RNA-seq from ~1000 individuals to map cell-type & state specific expression QTLs.</p>
 
-<p><b>Deep learning models of gene regulation for variant effect prediction.</b>QTL mapping is only practical for common genetic variants and cell-types/states. Deep learning (DL) models trained to predict chromatin marks, expression or splicing, from DNA sequence alone, require data from only a few individuals. Dr Knowles was involved in developing <a href="#Jaganathan2019-kb">SpliceAI</a>, one of the earlier methods using modern DL to do this, specifically for splice sites. The predicted difference between the reference and alternate alleles (delta scores) can be powerful predictors of variant effects, even for previously unseen variants. As part of the <a href="https://adsp.niagads.org/">Alzheimer's Disease Sequencing Project</a> (ADSP) we are training and assessing DL models of chromatin accessibility, histone modifications and splicing in AD relevant cell types. Delta scores for microglial chromatin accessibility are strongly enriched in AD GWAS and <a href="#Lakhani2025-fs">enable improved functional fine-mapping</a>. We developed <a href="#Das2025-uy">new rare variant association models</a> to leverage these delta scores and find new genetic associations with AD. </p>
+<p><b>Deep learning models of gene regulation for variant effect prediction.</b> QTL mapping requires large sample sizes and is only practical for common genetic variants and cell-types/states. By contrast, sequence-to-function deep learning (DL) models trained to predict chromatin marks, expression or splicing, from DNA sequence alone, only need data from a few individuals. Dr Knowles was involved in developing <a href="#Jaganathan2019-kb">SpliceAI</a>, one of the earlier methods using modern DL to do this, specifically for splice sites. The predicted difference between the reference and alternate alleles (delta scores) can be powerful predictors of variant effects, even for previously unseen variants. As part of the <a href="https://adsp.niagads.org/">Alzheimer's Disease Sequencing Project</a> (ADSP) we are training and assessing DL models of chromatin accessibility, histone modifications and splicing in AD relevant cell types. Delta scores for microglial chromatin accessibility are strongly enriched in AD GWAS and <a href="#Lakhani2025-fs">enable improved functional fine-mapping</a>. We developed <a href="#Das2025-uy">new rare variant association models</a> to leverage these delta scores and find new genetic associations with AD. </p>
 
 <p><b>Causal gene regulatory network inference.</b> DL models and cis QTL mapping help link molecular changes to disease but don't model how these effects propagate through the gene regulatory network (GRN). Building on <a href="#Brown2021">our earlier work</a> on robust, scalable Mendelian randomization, we developed <a href="#Brown2023-uc">inverse sparse regression</a>, which deconvolves an estimated total causal effect network into direct and indirect effects using a directed analogue of the graphical lasso. We are applying inspre to trans-eQTLs from BigBrain and neurological GWAS to map how genetic effects propagate through the GRN to impact disease risk. To adapt these ideas to the nonlinear, multiple cell-type setting we have <a href="#Lin2025-gg">developed</a> and <a href="#Zweig2025-cd">theoretically characterized</a> differential equation models of cellular dynamics.</p>
 
@@ -169,8 +169,8 @@
 </div> </section>
 
 			  <section id="megan"> <div>
-				<h4>Megan Schertzer</h4>
-			<div><span class="image face"><img src="images/megan.jpg" alt="Megan" width="150"></span></div><p>Megan was a postdoc in the Knowles Lab from 2019 to 2025. She's now a senior scientist jointly with our collaborator <a href="https://med.virginia.edu/sheynkman-lab/">Gloria Sheynkman</a>. She is interested in integrating human genomics and molecular biology to better understand the role of non-coding RNA in the brain. She originally completed a BS in biochemistry from Lee University in Tennessee, and obtained her PhD under the mentorship of Mauro Calabrese at UNC-Chapel Hill. There, she led a project to study how cis-acting long non-coding RNAs efficiently target and spread Polycomb Repressive Complexes to compact chromatin and repress nearby gene expression. Outside of the lab, she enjoys hiking, playing volleyball, and eating Mexican food.</p> 
+				<h4>Megan Schertzer - Visiting Staff Scientist</h4>
+			<div><span class="image face"><img src="images/megan.jpg" alt="Megan" width="150"></span></div><p>Megan was a postdoc in the Knowles Lab from 2019 to 2025. She's now a Senior Staff Scientist jointly with our collaborator <a href="https://med.virginia.edu/sheynkman-lab/">Gloria Sheynkman</a>. She is interested in integrating human genomics and molecular biology to better understand the role of non-coding RNA in the brain. She originally completed a BS in biochemistry from Lee University in Tennessee, and obtained her PhD under the mentorship of Mauro Calabrese at UNC-Chapel Hill. There, she led a project to study how cis-acting long non-coding RNAs efficiently target and spread Polycomb Repressive Complexes to compact chromatin and repress nearby gene expression. Outside of the lab, she enjoys hiking, playing volleyball, and eating Mexican food.</p> 
 </div> </section> <!-- End Megan -->
 
 							</div> </section> <!-- End staff -->
@@ -364,8 +364,10 @@
 
         <section id="laura"> <div>
           <h4>Laura Pereira - Staff Scientist/Lab Manager</h4>
-        <div><span class="image face"><img src="images/laura.jpg" alt="Laura" width="150"></span></div><p>Laura was a Staff Scientist and Lab Manager working on determining the contribution of genomic sequences and RNA-binding proteins in regulating splicing in different cellular contexts with a focus on neuronal function.</p> 
+		<div><span class="image face"><img src="images/laura.jpg" alt="Laura" width="150"></span></div><p>Laura was a Staff Scientist and Lab Manager working on determining the contribution of genomic sequences and RNA-binding proteins in regulating splicing in different cellular contexts with a focus on neuronal function. Laura is now a Team Lead at Spark Therapeutics.</p>
   </div> </section>
+
+  <br>
 
   <section id="chloe"> <div>
 	<h4>Chloé Terwagne</h4>
@@ -388,12 +390,13 @@
           <div><span class="image face"><img src="images/udai.jpg" alt="Udai" width="150"></span></div><p>Udai was an undergraduate student at Columbia Engineering studying Computer Science. He is interested in applied machine learning and probabilistic modeling, and is currently exploring active learning approaches with applications in computational biology. In his free time, Udai enjoys skiing and playing tennis. 
           </p> 
         </div> </section>
+		<br>
 
         </div> </section> <!-- End alumni -->
 
               <section id="join"> <div>
                 <h3>Join us!</h3>
-							<p>We're always looking for great candidates to join the lab at all levels. If you're a student at Columbia University feel free to <a href="mailto:david.arthur.knowles@gmail.com">e-mail</a> me about rotating in the lab. If you're looking at PhD programmes please bear in mind you will need to apply through Columbia University <a href="https://www.cs.columbia.edu/">Computer Science</a> or <a href="https://systemsbiology.columbia.edu/">Systems Biology</a>.</p>
+							<p> If you're looking at PhD programmes please bear in mind you will need to apply through Columbia University <a href="https://www.cs.columbia.edu/">Computer Science</a> or <a href="https://systemsbiology.columbia.edu/">Systems Biology</a>.</p>
 							</div> </section>
 
 							</div> </section>
@@ -403,7 +406,7 @@
 								<div class="container">
 									<h3>Publications</h3>
 									<ul class="feature-icons">
-										<li class="fa-bullhorn"><a href="#working">Working</a></li>
+										<li class="fa-bullhorn"><a href="#working">Under submission</a></li>
 										<li class="fa-flask"><a href="#genetics">Genetics</a></li>
 										<li class="fa-cog"><a href="#ml">Machine learning/statistics</a></li>
 									</ul>
@@ -1884,6 +1887,7 @@
 				<ul>
 					<li>Most of our code is available on the <a href="https://github.com/daklab/">daklab github</a></li>
 					<li><a href="https://github.com/daklab/tiger">TIGER</a> for CRISPR/Cas13 guide design.</li>
+					<li><a href="https://github.com/daklab/gruyere">gruyere</a> for annotation-informed rare variant association testing.</li>
 					<li><a href="https://github.com/daklab/isoviz">Isoviz</a> for isoform visualization and designing Cas13-based isoform-specifc knockdowns experiments.</li>
 					<li><a href="https://github.com/daklab/LeafletSC">LeafletSC</a> and <a href="https://github.com/daklab/LeafletFA">LeafletFA</a> for single cell splicing analysis.</li>
 					<li><a href="https://github.com/astirn/faithful-heteroscedasticity">Faithful Heteroscedastic Regression with Neural Networks</a></li>
