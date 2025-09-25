@@ -1,3 +1,31 @@
+@article{Tokolyi2025-od,
+ abstract = {Alternative splicing is a key mechanism by which genetic variation contributes to human phenotypic diversity and disease risk, yet its incorporation into large-scale genetic studies remains limited. Here we utilize blood RNA-seq from 4,732 European-ancestry individuals in the INTERVAL cohort to construct genetic scores for junction-based splicing phenotypes, 13,851 of which have external R2 > 0.01 in held-out individuals. These models were imputed into the UK Biobank (UKBB; n=408,590) and All of Us (AoU; n=201,958), enabling splicing transcriptome-wide association studies (sTWAS) across 1,191 harmonized disease phenotypes. We identified 4,953 splicing-disease associations, of which 66\% were shared across cohorts. To account for confounding by co-regulation and linkage disequilibrium, we used a novel Bayesian joint fine-mapping framework to prioritize 1,271 likely causal splicing-disease associations across 492 genes, revealing mechanisms underlying immune, vascular, and metabolic traits. Fine-mapped associations included exon-skipping events in GSDMB and splicing in untranslated regions in STAT6 and IL18RAP for asthma, unannotated splicing events in PIEZO1 and PPP3R1 for vascular traits, and alternative exons in BAK1 and TNFRSF14 for celiac disease. Our study demonstrates that common genetic variation influencing splicing substantially shapes complex trait architecture and provides a scalable, statistically rigorous framework to uncover transcriptional disease mechanisms.},
+ author = {Tokolyi, Alex and Banerjee, Saikat and Knowles, David A},
+ journal = {medRxiv},
+ keywords = {Working},
+ language = {en},
+ title = {Uncovering splicing-mediated disease associations in the {UK}
+Biobank and All of Us using a {TWAS} with Bayesian joint
+fine-mapping},
+ url = {https://www.medrxiv.org/content/10.1101/2025.09.19.25336165v1.abstract},
+ year = {2025}
+}
+
+@article{Grabski2025-df,
+ abstract = {Single-cell perturbation dictionaries provide systematic measurements of how cells respond to genetic and chemical perturbations, and create the opportunity to assign causal interpretations to observational data. Here, we introduce RNA fingerprinting, a statistical framework that maps transcriptional responses from new experiments onto reference perturbation dictionaries. RNA fingerprinting learns denoised perturbation ``fingerprints'' from single-cell data, then probabilistically assigns query cells to one or more candidate perturbations while accounting for uncertainty. We benchmark our method across ground-truth datasets, demonstrating accurate assignments at single-cell resolution, scalability to genome-wide screens, and the ability to resolve combinatorial perturbations. We demonstrate its broad utility across diverse biological settings: identifying context-specific regulators of p53 under ribosomal stress, characterizing drug mechanisms of action and dose-dependent off-target effects, and uncovering cytokine-driven B cell heterogeneity during secondary influenza infection in vivo. Together, these results establish RNA fingerprinting as a versatile framework for interpreting single-cell datasets by linking cellular states to the underlying perturbations which generated them.},
+ author = {Grabski, Isabella N and Lee, Junsuk and Blair, John and Dalgarno,
+Carol and Mascio, Isabella and Bradu, Alexandra and Knowles†, David
+A and Satija†, Rahul},
+ bibbase_note = {†Co-corresponding},
+ journal = {bioRxiv},
+ keywords = {Working},
+ language = {en},
+ title = {Mapping transcriptional responses to cellular perturbation
+dictionaries with {RNA} fingerprinting},
+ url = {https://www.biorxiv.org/content/10.1101/2025.09.19.676866v1.abstract},
+ year = {2025}
+}
+
 @article{Banerjee2025-nb,
  abstract = {Groups of complex diseases, such as coronary heart diseases, neuropsychiatric disorders, and cancers, often display overlapping clinical symptoms and pharmacological treatments. The shared associations of genetic variants across diseases has the potential to explain their underlying biological processes, but this remains poorly understood. To address this, we model the matrix of summary statistics of trait-associated genetic variants as the sum of a low-rank component - representing shared biological processes - and a sparse component, representing unique processes and arbitrarily corrupted or contaminated components. We introduce Clorinn, an open-source Python software that uses convex optimization algorithms to recover these components by minimizing a weighted combination of the nuclear norm and of the L1 norm. Among others, Clorinn provides two significant benefits: (a) Convex optimization guarantees reproducibility of the components, and (b) The low-rank ``uncorrupted'' matrix allows robust singular value decomposition (SVD) and principal component analysis (PCA), which are otherwise highly sensitive to outliers and noise in the input matrix. In extensive simulations, we observe that Clorinn outperforms state-of-the-art approaches in capturing the shared latent factors across phenotypes. We apply Clorinn to estimate 200 latent factors from GWAS summary data of 2,110 phenotypes measured in European-ancestry Pan-UK BioBank individuals N = 420,531 and 14 psychiatric disorders.},
  author = {Banerjee, Saikat and O'Connell, Shane and Colbert, Sarah M C and
@@ -251,7 +279,7 @@ Mechanistic Cellular Dynamics},
  booktitle = {AISTATS},
  keywords = {mlstats},
  title = {The {VampPrior} Mixture Model},
- url = {http://arxiv.org/abs/2402.04412},
+ url = {https://openreview.net/forum?id=tvHsQIe8LO},
  year = {2025}
 }
 
