@@ -3,6 +3,14 @@
 cat src/header.html > index.html
 
 cat >>index.html <<EOL
+<section id="highlighted">
+<h4>Highlighted publications</h4>
+EOL
+
+cat publications/highlighted.html >> index.html
+
+cat >>index.html <<EOL
+</section>
 <section id="working">
 <h4>Under submission</h4>
 EOL

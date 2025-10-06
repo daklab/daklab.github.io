@@ -4,7 +4,8 @@
 alias  jabref='/Applications/JabRef.app/Contents/MacOS/JabRef --debug'
 
 # jabref -i publications.bib -m "((entrytype=inproceedings) and (keywords=mlstats))",ml_conf.html,website -n &
-jabref -i publications.bib -m "keywords=mlstats",ml.html,website -n &
+jabref -i publications.bib -m "keywords=highlighted",highlighted.html,website -n &
 jabref -i publications.bib -m "keywords=genetics",genetics.html,website -n &
 jabref -i publications.bib -m "keywords=submitted",working.html,website -n &
+jabref -i publications.bib -m "keywords=mlstats",ml.html,website -n &
 jabref -i publications.bib -m "keywords=dead",old.html,website -n &
