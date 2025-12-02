@@ -1,3 +1,13 @@
+@article{Vaidyanathan2025-fo,
+ abstract = {Alternative splicing (AS) and gene expression (GE) are tightly related regulatory processes, critical for defining cell types and states, yet are rarely modeled together in single-cell analyses. This hinders a comprehensive understanding of cellular identity. We address this by introducing SpliceVI, adapted from MultiVI (Multi-modal Variational Inference) to specifically handle AS. Applied to a large multisample mouse Smart-seq2 dataset (n=142,315 cells/nuclei), SpliceVI jointly learns from both AS and GE using a partial variational autoencoder that effectively handles the sparsity and missingness of splicing data. We show that SpliceVI's joint embeddings are more expressive and informative of biological correlates like age than a GE-only approach (scVI). SpliceVI also uncovers splicing-based differences between neuronal subclusters. This approach reveals the distinct yet synergistic relationship between AS and GE in shaping cellular diversity in mouse.},
+ author = {Vaidyanathan, Smriti and Isaev, Keren and Zweig, Aaron and Knowles, David A},
+ journal = {bioRxiv},
+ keywords = {Submitted},
+ title = {Robust integration of sparse single-cell alternative splicing and gene expression data with {SpliceVI}},
+ url = {https://www.biorxiv.org/content/10.1101/2025.11.26.690853v1.abstract},
+ year = {2025}
+}
+
 @article{Lee2025-ue,
  abstract = {Abstract Although defined by end-stage neuronal loss, neurodegenerative diseases are increasingly hypothesized to be initiated by early microglial dysfunction. Genetic risk for Alzheimer’s disease (AD) is particularly highly enriched for non-coding variants located in microglia-specific regulatory regions. Yet, the linkage-dense nature of these variants limits their functional interpretation. To elucidate how risk variants influence microglial gene regulation, we contrast fine-mapping of AD genome-wide association study (GWAS) loci by four complementary methods, and resolve a highly concordant set of putative causal variants. In total, 11,550 candidate regulatory sequences (CRSs), nominated from GWAS (n = 2,183), microglial expression quantitative trait loci (QTL) (n = 5,721) and microglial chromatin accessibility QTL (n = 1,519), are screened en masse by massively parallel reporter assay (MPRA) in human induced pluripotent stem cell (hiPSC)-derived microglia (iMGL) and immortalized HMC3 cell lines. Distinct sets of functional variants are identified between cellular models, underscoring the importance of using physiologically relevant microglia for variant interpretation. Functional regulatory variants (frVar) are enriched in promoters and splicing regions, with over half predicted to disrupt transcription factor (TF) binding. The affected TFs yield distinct regulatory modules, the first with an inflammatory program and the second with a DNA stress-response network. Mapping frVar to their predicted target genes reveals enrichment for biological processes related to amyloid biology, immune signaling, and neuron-microglia communication. Notably, we pinpoint functional variants within several understudied AD loci, including TSPOAP1, providing direct evidence for causal regulatory effects. Together, these findings establish the first large-scale microglial-context MPRA, define a microglial regulome underlying AD genetic risk, and provide a functional framework to refine noncoding variant interpretation and therapeutic target discovery.},
  author = {Lee, Chia-Yi and Ravi, Ashvin and Huang, Tzu-Chieh and Wyman,
@@ -111,8 +121,7 @@ increased risk of Alzheimer's disease},
 @article{Becker2025-cd,
  abstract = {Subcellular RNA organization can affect critical cellular functions. However, our understanding of RNA microenvironments, particularly biomolecular condensates, remains limited, largely due to a lack of technologies to comprehensively interrogate mesoscale RNA organization. Here, we adapt Split-Pool Recognition of Interactions by Tag Extension to map micron-scale RNA-RNA spatial proximity genome-wide across cell regions (RNA-SPRITE). Deploying RNA-SPRITE, we find extensive, conserved organization of mature mRNAs, with increased colocalization between mRNAs that share RNA-binding protein (RBP) motifs or encode functionally related proteins. Both effects are especially strong in dendrites and axons, suggesting prevalent mRNA co-regulation. Moreover, mRNAs with less compact folding, lower translation efficiency, and specific RBP motifs are more likely to be in RNA-rich condensates. However, perturbations that broadly dissolve or enhance condensation reveal that RBP motif and encoded protein-mediated colocalizations largely remain intact, independent of condensation. These results demonstrate the power of RNA-SPRITE in revealing critical aspects of RNA’s functional organization. In Brief: Unbiased, genome-wide maps of RNA-RNA mesoscale spatial proximity uncover extensive subcellular organization and its governing principles. Highlights: RNA-SPRITE reveals micron-scale RNA colocalization genome-wide across cell regions; mRNA colocalization specificity is driven by shared motifs and encoded protein function; mRNAs with less compact folding, lower translation efficiency, and distinct protein-binding motifs are more likely to be in condensates; Neurites have a particularly high degree of sequence and function-dependent mRNA organization.},
  author = {Becker, Lindsay A and Quinodoz, Sofia A and Comi, Troy J and
-Kimchi, Ofer and Knowles†, David A and Brangwynne†, Clifford P},
-bibbase_note = {†Co-corresponding},
+Kimchi, Ofer and Knowles, David A and Brangwynne, Clifford P},
  journal = {bioRxiv},
  keywords = {Submitted},
  language = {en},
@@ -136,13 +145,14 @@ perturbations},
 }
 
 @article{Su2025-by,
- abstract = {Transcript diversity including splicing and alternative 3’end usage is crucial for cellular identity and adaptation, yet its spatial coordination remains poorly understood. Here, we present SPLISOSM (SpatiaL ISOform Statistical Modeling), a computational framework for detecting isoform-resolution patterns from spatial transcriptomics data. SPLISOSM leverages multivariate testing to account for spot- and isoform-level dependencies, demonstrating robust and theoretically grounded performance on sparse data. In the mouse brain, we identify over 1,000 spatially variable transcript diversity events, primarily in synaptic signaling pathways linked to neuropsychiatric disorders, and uncover both known and novel regulatory relationships with region-specific RNA binding proteins. We further show that these patterns are evolutionarily conserved between mouse and human prefrontal cortex. Analysis of human glioblastoma highlights pervasive transcript diversity in antigen presentation and adhesion genes associated with specific microenvironmental conditions. Together, we present a comprehensive spatial splicing analysis in the brain under normal and neoplastic conditions.HighlightsMultivariate tests of spatial variability and association for transcript usageConserved isoform variability in synaptic pathways across mouse and human brainsCoordinated RNA binding protein expression drives region-specific regulationTumor microenvironment shapes spatial transcript landscapes in human glioma},
+ abstract = {Transcript diversity including splicing and alternative 3’end usage is crucial for cellular identity and adaptation, yet its spatial coordination remains poorly understood. Here, we present SPLISOSM (SpatiaL ISOform Statistical Modeling), a computational framework for detecting isoform-resolution patterns from spatial transcriptomics data. SPLISOSM leverages multivariate testing to account for spot- and isoform-level dependencies, demonstrating robust and theoretically grounded performance on sparse data. In the mouse brain, we identify over 1,000 spatially variable transcript diversity events, primarily in synaptic signaling pathways linked to neuropsychiatric disorders, and uncover both known and novel regulatory relationships with region-specific RNA binding proteins. We further show that these patterns are evolutionarily conserved between mouse and human prefrontal cortex. Analysis of human glioblastoma highlights pervasive transcript diversity in antigen presentation and adhesion genes associated with specific microenvironmental conditions. Together, we present a comprehensive spatial splicing analysis in the brain under normal and neoplastic conditions.},
  author = {Su, Jiayu and Qu, Yiming and Schertzer, Megan and Yang, Haochen
 and Jiang, Jiahao and Lhakhang, Tenzin and Nelson, Theodore M and
 Park, Stella and Lai, Qiliang and Fu, Xi and Choi, Seung-Won and
 Knowles†, David A and Rabadan†, Raul},
- journal = {Accepted in Nature Biotechnology},
- keywords = {Highlighted},
+ bibbase_note = {†Co-corresponding \textbf{Summary}: SPLISOSM (SpatiaL ISOform Statistical Modeling) performs kernel-based nonparametric tests of isoform usage in spatial transcriptomics. SPLISOSM identifies over 1,000 spatially variable isoforms in the mouse brain, primarily in synaptic signaling pathways, and uncovers regulation by specific RNA binding proteins. Analysis of human glioblastoma demonstrates pervasive isoform diversity in antigen presentation and adhesion genes associated with specific microenvironmental conditions.},
+ journal = {Accepted to Nature Biotechnology},
+ keywords = {Genetics,Top5},
  title = {A computational framework for mapping isoform landscape and
 regulatory mechanisms from spatial transcriptomics data},
  url = {https://www.biorxiv.org/content/10.1101/2025.05.02.651907.abstract},
@@ -380,16 +390,17 @@ using a binomial mixture model},
  year = {2023}
 }
 
-@article{Brown2025-inspre,
+@article{Brown2023-uc,
  abstract = {Inference of directed biological networks is an important but notoriously challenging problem. We introduce inverse sparse regression (inspre) , an approach to learning causal networks that leverages large-scale intervention-response data. Applied to 788 genes from the genome-wide perturb-seq dataset, inspre helps elucidate the network architecture of blood traits.},
- author = {Brown, Brielin C and Morris, John A and Lappalainen, Tuuli and Knowles, David A},
- journal = {Nature Communications},
+ author = {Brown, Brielin C and Morris, John A and Lappalainen, Tuuli and
+Knowles, David A},
+ journal = {To appear in Nature Communications},
  keywords = {Highlighted},
- title = {Large-scale causal discovery using interventional data sheds light on gene network structure in K562 cells},
- url = {https://www.nature.com/articles/s41467-025-64353-7},
- preprint = {https://www.biorxiv.org/content/10.1101/2023.10.13.562293v1},
- year = {2025},
- doi={https://doi.org/10.1101/2023.10.13.562293}
+ language = {en},
+ title = {Large-scale causal discovery using interventional data sheds
+light on the regulatory network architecture of blood traits},
+ url = {https://www.biorxiv.org/content/10.1101/2023.10.13.562293v1},
+ year = {2025}
 }
 
 @article{Schertzer2025-lb,
