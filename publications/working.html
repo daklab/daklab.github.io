@@ -1,6 +1,24 @@
 <ol>
-<li><div id="Lakhani2025-bm"><em>Lakhani C, Cavalca G, Liu A, Nidumbur R, Feng R, Raj T, De Jager P, The Alzheimer's Disease Functional Genomics Consor, Wang G and Knowles DA</em> (2025), <strong>"Machine learning-based prediction of cell-type resolved brain eQTLs enhances discovery of variants explaining Alzheimer'sdisease heritability"</strong>, medRxiv. </div>
-<div>[<a data-toggle="collapse" href="#abs_Lakhani2025-bm">Abstract</a>][<a href="#bib_Lakhani2025-bm" data-toggle="collapse">BibTeX</a>] [<a href="https://doi.org/10.64898/2025.12.03.25341562" target="_blank">DOI</a>] [<a href="https://www.medrxiv.org/content/10.64898/2025.12.03.25341562v1" target="_blank">URL</a>]</div>
+<li><div id="Isaev2025-zt"><em>Isaev K and Knowles DA</em> (2025), <strong>"Aging-associated alternative splicing programs conserved between human and mouse tissues"</strong>, bioRxiv. </div>
+<div>[<a data-toggle="collapse" href="#abs_Isaev2025-zt">Abstract</a>][<a href="#bib_Isaev2025-zt" data-toggle="collapse">BibTeX</a>] [<a href="https://www.biorxiv.org/content/10.64898/2025.12.30.697080v1.abstract" target="_blank">URL</a>]</div>
+
+<div id="abs_Isaev2025-zt" class="collapse">
+	<b>Abstract</b>: Alternative splicing is a key gene regulatory process that diversifies the proteome and controls gene dosage. Previous studies have detected aging-associated splicing changes across various tissues. However, their use of bulk RNA-seq obfuscates the impacted cell-types and may confound cell-type proportion changes with cell-intrinsic ones. We present a framework that first assembles and maps alternative splicing events in appropriate single cell RNA-seq data (scRNA-seq), then applies LeafletFA, a probabilistic model that discovers coordinated splicing programs (SPs) without requiring prior knowledge of cell types or clinical information, such as age. Applying this framework to over 200,000 cells from mouse and human Smart-seq2 multi-tissue atlases, we discovered global and cell type specific aging-associated SPs. In mice, integrating SPs with gene expression significantly improved age prediction in 46 of 76 tissue-cell types tested. We identified the RNA-binding protein <i>Snrnp70</i> as a key upstream mediator driving the shift from youthful to aged SPs. To test evolutionary conservation of these patterns, we employed transfer learning to map the murine splicing dictionary onto human transcriptomes. This revealed a conserved ``youth'' program (SP4) that is maintained in quiescent endothelial tissues but lost in high-turnover organs. We identified a conserved, age-dependent alternative 5' splice site usage in the splicing factor <i>SRSF5</i> as a molecular marker of this program in both species. Our work establishes alternative splicing as a coordinated, evolutionarily conserved dimension of cellular aging and provides LeafletFA as an open-source tool for single-cell splicing analysis.
+</div>
+<div id="bib_Isaev2025-zt" class="collapse">
+<b>BibTeX</b>:
+<pre>
+@article{Isaev2025-zt,
+  author = {Isaev, Keren and Knowles, David A},
+  title = {Aging-associated alternative splicing programs conserved between human and mouse tissues},
+  journal = {bioRxiv},
+  year = {2025},
+  url = {https://www.biorxiv.org/content/10.64898/2025.12.30.697080v1.abstract}
+}
+</pre>
+</div>
+</li><li><div id="Lakhani2025-bm"><em>Lakhani C, Cavalca G, Liu A, Nidumbur R, Feng R, Raj T, De Jager P, The Alzheimer's Disease Functional Genomics Consor, Wang G and Knowles DA</em> (2025), <strong>"Machine learning-based prediction of cell-type resolved brain eQTLs enhances discovery of variants explaining Alzheimer'sdisease heritability"</strong>, medRxiv. </div>
+<div>[<a data-toggle="collapse" href="#abs_Lakhani2025-bm">Abstract</a>][<a href="#bib_Lakhani2025-bm" data-toggle="collapse">BibTeX</a>] [<a href="http://dx.doi.org/10.64898/2025.12.03.25341562" target="_blank">URL</a>]</div>
 
 <div id="abs_Lakhani2025-bm" class="collapse">
 	<b>Abstract</b>: The majority of causal genome-wide association studies (GWAS) variants for Alzheimer's disease (AD) are believed to reside in noncoding regions of the genome, where they likely affect gene regulation, particularly in microglia. Although expression Quantitative Trait Loci (eQTL) studies offer valuable insights into gene regulation, they tend to identify variants in the promoter regions of genes under weaker selection. In contrast, GWAS variants are often found in enhancer regions linked to genes under stronger selection. To address this discrepancy, we developed predictive models, called single-cell Enhanced Expression Modifier Scores (scEEMS), to identify cell type-specific eQTLs using 4,839 genomic features, including deep learning-based scores that predict the effects of variants on various molecular phenotypes. These models were trained on fine-mapped single-cell eQTLs from six cell types and exhibited strong performance, with an average cross-validation area under the precision-recall curve (AUPRC) of 0.67. Notably, for microglia, the predicted eQTLs explained 15.3% of AD GWAS heritability, with a 140.6-fold enrichment of heritability (p-value 5.15 x 10⁻6), compared to just 5% of heritability explained by fine-mapped eQTLs. Incorporating scEEMS predictions as priors in eQTL fine-mapping refined credible sets and resulted in a net gain of 107 eGenes in microglia and 271 eGenes in astrocytes, reflecting improved statistical power that both identified new associations and filtered false positives. We used these models to link variants to cell type-specific genes and then applied the eMAGMA framework to nominate cell type-specific AD risk genes based on GWAS data. Our eMAGMA approach using predicted eQTLs identified 215 cell type-gene pairs (111 unique genes), substantially more than the 76 pairs (55 unique genes) found using fine-mapped eQTLs. Among these, we identified 43 microglia-specific, 18 astrocyte-specific, and 15 oligodendrocyte-specific AD risk genes. Of the 215 pairs, 62 replicated in at least one non-European population (African-American, Hispanic, or East Asian), compared to only 29 from fine-mapped eQTLs. Importantly, 18 of the replicated pairs represent novel discoveries not found by standard MAGMA or fine-mapped eMAGMA analyses. Five cell type-gene pairs replicated across European and at least two non-European populations: BIN1 (microglia), PICALM (microglia), ABCA7 (astrocyte and oligodendrocyte), and ARHGAP45 (microglia).
@@ -13,8 +31,7 @@
   title = {Machine learning-based prediction of cell-type resolved brain eQTLs enhances discovery of variants explaining Alzheimer'sdisease heritability},
   journal = {medRxiv},
   year = {2025},
-  url = {https://www.medrxiv.org/content/10.64898/2025.12.03.25341562v1},
-  doi = {10.64898/2025.12.03.25341562}
+  url = {http://dx.doi.org/10.64898/2025.12.03.25341562}
 }
 </pre>
 </div>
