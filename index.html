@@ -117,13 +117,13 @@
 												<h2>Research overview</h2>
 <p><b>Quantifying alternative splicing across genotypes, cell-types and disease states.</b> Dr Knowles previously developed <a href="#LeafCutter">LeafCutter</a>, a scalable, flexible approach to quantifying alternative splicing (AS) from bulk  RNA-seq. LeafCutter represents AS via the usage rate of each splice junction relative to a group of neighboring junctions. <a href="#Li2016splicing">We</a> and others have used LeafCutter to show that for typical complex diseases a comparable number of risk variants act through AS vs expression. We are working on tools for <a href="#Isaev2023-ax">single-cell</a>, <a href="#Talukder2025-kx">long-read</a> and <a href="#Su2025-by">spatial</a> AS analysis, as well as <a href="#Schertzer2025-pv">ways to interpret</a> the remarkable isoform complexity of human cells revealed by long-read RNA-seq.</p>
 
-<p><b>QTL mapping in thousands of brain samples.</b> RNA-seq sample sizes for brain have lagged behind other tissues. With the <a href="https://rajlab.org/">Raj lab</a> we have uniformly processed over 10,000 post-mortem bulk brain RNA-seq samples, a resource we call BigBrain. BigBrain is the largest brain quantitative trait locus (QTL) meta-analysis to date so the resulting QTLs are providing unprecedented resolution to dissect neurological disease GWAS loci. In a parallel effort, <a href="#Jang2025-vj">SingleBrain</a>, we meta-analysed brain single nuclei RNA-seq from ~1000 individuals to map cell-type & state specific expression QTLs.</p>
+<p><b>QTL mapping in thousands of brain samples.</b> RNA-seq sample sizes for brain have lagged behind other tissues. With the <a href="https://rajlab.org/">Raj lab</a> we have uniformly processed over 10,000 post-mortem bulk brain RNA-seq samples, a resource we call <a href='#Real2025-xl'>BigBrain</a>. BigBrain is the largest brain quantitative trait locus (QTL) meta-analysis to date so the resulting QTLs are providing unprecedented resolution to dissect neurological disease GWAS loci. In a parallel effort, <a href="#Jang2025-vj">SingleBrain</a>, we meta-analysed brain single nuclei RNA-seq from ~1000 individuals to map cell-type & state specific expression QTLs.</p>
 
 <p><b>Deep learning models of gene regulation for variant effect prediction.</b> QTL mapping requires large sample sizes and is only practical for common genetic variants and cell-types/states. By contrast, sequence-to-function deep learning (DL) models trained to predict chromatin marks, expression or splicing, from DNA sequence alone, only need data from a few individuals. Dr Knowles was involved in developing <a href="#Jaganathan2019-kb">SpliceAI</a>, one of the earlier methods using modern DL to do this, specifically for splice sites. The predicted difference between the reference and alternate alleles (delta scores) can be powerful predictors of variant effects, even for previously unseen variants. As part of the <a href="https://adsp.niagads.org/">Alzheimer's Disease Sequencing Project</a> (ADSP) we are training and assessing DL models of chromatin accessibility, histone modifications and splicing in AD relevant cell types. Delta scores for microglial chromatin accessibility are strongly enriched in AD GWAS and <a href="#Lakhani2025-fs">enable improved functional fine-mapping</a>. We developed <a href="#Das2025-uy">new rare variant association models</a> to leverage these delta scores and find new genetic associations with AD. </p>
 
-<p><b>Causal gene regulatory network inference.</b> DL models and cis QTL mapping help link molecular changes to disease but don't model how these effects propagate through the gene regulatory network (GRN). Building on <a href="#Brown2021">our earlier work</a> on robust, scalable Mendelian randomization, we developed <a href="#Brown2023-uc">inverse sparse regression</a>, which deconvolves an estimated total causal effect network into direct and indirect effects using a directed analogue of the graphical lasso. We are applying inspre to trans-eQTLs from BigBrain and neurological GWAS to map how genetic effects propagate through the GRN to impact disease risk. To adapt these ideas to the nonlinear, multiple cell-type setting we have <a href="#Lin2025-gg">developed</a> and <a href="#Zweig2025-cd">theoretically characterized</a> differential equation models of cellular dynamics.</p>
+<p><b>Causal gene regulatory network inference.</b> DL models and cis QTL mapping help link molecular changes to disease but don't model how these effects propagate through the gene regulatory network (GRN). Building on <a href="#Brown2021">our earlier work</a> on robust, scalable Mendelian randomization, we developed <a href="#Brown2025-uc">inverse sparse regression</a>, which deconvolves an estimated total causal effect network into direct and indirect effects using a directed analogue of the graphical lasso. We are applying inspre to trans-eQTLs from BigBrain and neurological GWAS to map how genetic effects propagate through the GRN to impact disease risk. To adapt these ideas to the nonlinear, multiple cell-type setting we have <a href="#Lin2025-gg">developed</a> and <a href="#Zweig2025-cd">theoretically characterized</a> differential equation models of cellular dynamics.</p>
 
-<p><b>Experimental characterization of isoform function.</b> It is currently challenging to characterise the function of putative disease relevant isoforms. To address this, we developed a <a href="#Schertzer2023-lb">strategy targeting unique exon-exon junctions</a> in mature RNA with CRISPR/Cas13d to knockdown specific isoforms and, in collaboration with the <a href="https://www.nygenome.org/science-technology/faculty-labs/sanjana-lab/">Sanjana lab</a>, a DL model, <a href="#Wessels2023-ko">TIGER</a>, to predict guide RNA efficacy for this system. </p>
+<p><b>Experimental characterization of isoform function.</b> It is currently challenging to characterise the function of putative disease relevant isoforms. To address this, we developed a <a href="#Schertzer2025-lb">strategy targeting unique exon-exon junctions</a> in mature RNA with CRISPR/Cas13d to knockdown specific isoforms and, in collaboration with the <a href="https://www.nygenome.org/science-technology/faculty-labs/sanjana-lab/">Sanjana lab</a>, a DL model, <a href="#Wessels2023-ko">TIGER</a>, to predict guide RNA efficacy for this system. </p>
 </div>
 
 <p><b>Foundational machine learning.</b> We also work on foundational ML, most recently on <a href="#Su2024-ou">kernel-based latent subspace analysis</a>, <a href="#Stirn2024-qw">principled priors for variational autoencoders</a>, and <a href="#Stirn2023">heteroskedastic regression</a>.</p>
@@ -354,11 +354,11 @@
 <section id="highlighted">
 <h4>Highlighted publications</h4>
 <ol>
-<li><div id="Su2025-by"><em>Su J, Qu Y, Schertzer M, Yang H, Jiang J, Lhakhang T, Nelson TM, Park S, Lai Q, Fu X, Choi S-W, Knowles† DA and Rabadan† R</em> (2025), <strong>"A computational framework for mapping isoform landscape and regulatory mechanisms from spatial transcriptomics data"</strong>, Accepted in Nature Biotechnology. </div>
-<div>[<a data-toggle="collapse" href="#abs_Su2025-by">Abstract</a>][<a href="#bib_Su2025-by" data-toggle="collapse">BibTeX</a>] [<a href="https://www.biorxiv.org/content/10.1101/2025.05.02.651907.abstract" target="_blank">URL</a>]</div>
+<li><div id="Su2025-by"><em>Su J, Qu Y, Schertzer M, Yang H, Jiang J, Lhakhang T, Nelson TM, Park S, Lai Q, Fu X, Choi S-W, Knowles† DA and Rabadan† R</em> (2026), <strong>"A computational framework for mapping isoform landscape and regulatory mechanisms from spatial transcriptomics data"</strong>, Nature Biotechnology.  †Co-corresponding.</div>
+<div>[<a data-toggle="collapse" href="#abs_Su2025-by">Abstract</a>][<a href="#bib_Su2025-by" data-toggle="collapse">BibTeX</a>] [<a href="https://www.nature.com/articles/s41587-025-02965-6" target="_blank">URL</a>]</div>
 
 <div id="abs_Su2025-by" class="collapse">
-	<b>Abstract</b>: Transcript diversity including splicing and alternative 3’end usage is crucial for cellular identity and adaptation, yet its spatial coordination remains poorly understood. Here, we present SPLISOSM (SpatiaL ISOform Statistical Modeling), a computational framework for detecting isoform-resolution patterns from spatial transcriptomics data. SPLISOSM leverages multivariate testing to account for spot- and isoform-level dependencies, demonstrating robust and theoretically grounded performance on sparse data. In the mouse brain, we identify over 1,000 spatially variable transcript diversity events, primarily in synaptic signaling pathways linked to neuropsychiatric disorders, and uncover both known and novel regulatory relationships with region-specific RNA binding proteins. We further show that these patterns are evolutionarily conserved between mouse and human prefrontal cortex. Analysis of human glioblastoma highlights pervasive transcript diversity in antigen presentation and adhesion genes associated with specific microenvironmental conditions. Together, we present a comprehensive spatial splicing analysis in the brain under normal and neoplastic conditions.HighlightsMultivariate tests of spatial variability and association for transcript usageConserved isoform variability in synaptic pathways across mouse and human brainsCoordinated RNA binding protein expression drives region-specific regulationTumor microenvironment shapes spatial transcript landscapes in human glioma
+	<b>Abstract</b>: Transcript diversity including splicing and alternative 3’end usage is crucial for cellular identity and adaptation, yet its spatial coordination remains poorly understood. Here, we present SPLISOSM (SpatiaL ISOform Statistical Modeling), a computational framework for detecting isoform-resolution patterns from spatial transcriptomics data. SPLISOSM leverages multivariate testing to account for spot- and isoform-level dependencies, demonstrating robust and theoretically grounded performance on sparse data. In the mouse brain, we identify over 1,000 spatially variable transcript diversity events, primarily in synaptic signaling pathways linked to neuropsychiatric disorders, and uncover both known and novel regulatory relationships with region-specific RNA binding proteins. We further show that these patterns are evolutionarily conserved between mouse and human prefrontal cortex. Analysis of human glioblastoma highlights pervasive transcript diversity in antigen presentation and adhesion genes associated with specific microenvironmental conditions. Together, we present a comprehensive spatial splicing analysis in the brain under normal and neoplastic conditions.
 </div>
 <div id="bib_Su2025-by" class="collapse">
 <b>BibTeX</b>:
@@ -366,9 +366,9 @@
 @article{Su2025-by,
   author = {Su, Jiayu and Qu, Yiming and Schertzer, Megan and Yang, Haochen and Jiang, Jiahao and Lhakhang, Tenzin and Nelson, Theodore M and Park, Stella and Lai, Qiliang and Fu, Xi and Choi, Seung-Won and Knowles†, David A and Rabadan†, Raul},
   title = {A computational framework for mapping isoform landscape and regulatory mechanisms from spatial transcriptomics data},
-  journal = {Accepted in Nature Biotechnology},
-  year = {2025},
-  url = {https://www.biorxiv.org/content/10.1101/2025.05.02.651907.abstract}
+  journal = {Nature Biotechnology},
+  year = {2026},
+  url = {https://www.nature.com/articles/s41587-025-02965-6}
 }
 </pre>
 </div>
@@ -390,22 +390,21 @@
 }
 </pre>
 </div>
-</li><li><div id="Brown2025-inspre"><em>Brown BC, Morris JA, Lappalainen T and Knowles DA</em> (2025), <strong>"Large-scale causal discovery using interventional data sheds light on gene network structure in K562 cells"</strong>, Nature Communications. </div>
-<div>[<a data-toggle="collapse" href="#abs_Brown2025-inspre">Abstract</a>][<a href="#bib_Brown2025-inspre" data-toggle="collapse">BibTeX</a>] [<a href="https://doi.org/10.1101/2023.10.13.562293" target="_blank">DOI</a>] [<a href="https://www.nature.com/articles/s41467-025-64353-7" target="_blank">URL</a>]</div>
+</li><li><div id="Brown2025-uc"><em>Brown BC, Morris JA, Lappalainen T and Knowles DA</em> (2025), <strong>"Large-scale causal discovery using interventional data sheds light on the regulatory network architecture of blood traits"</strong>, Nature Communications. </div>
+<div>[<a data-toggle="collapse" href="#abs_Brown2025-uc">Abstract</a>][<a href="#bib_Brown2025-uc" data-toggle="collapse">BibTeX</a>] [<a href="https://www.nature.com/articles/s41467-025-64353-7" target="_blank">URL</a>]</div>
 
-<div id="abs_Brown2025-inspre" class="collapse">
+<div id="abs_Brown2025-uc" class="collapse">
 	<b>Abstract</b>: Inference of directed biological networks is an important but notoriously challenging problem. We introduce inverse sparse regression (inspre) , an approach to learning causal networks that leverages large-scale intervention-response data. Applied to 788 genes from the genome-wide perturb-seq dataset, inspre helps elucidate the network architecture of blood traits.
 </div>
-<div id="bib_Brown2025-inspre" class="collapse">
+<div id="bib_Brown2025-uc" class="collapse">
 <b>BibTeX</b>:
 <pre>
-@article{Brown2025-inspre,
+@article{Brown2025-uc,
   author = {Brown, Brielin C and Morris, John A and Lappalainen, Tuuli and Knowles, David A},
-  title = {Large-scale causal discovery using interventional data sheds light on gene network structure in K562 cells},
+  title = {Large-scale causal discovery using interventional data sheds light on the regulatory network architecture of blood traits},
   journal = {Nature Communications},
   year = {2025},
-  url = {https://www.nature.com/articles/s41467-025-64353-7},
-  doi = {10.1101/2023.10.13.562293}
+  url = {https://www.nature.com/articles/s41467-025-64353-7}
 }
 </pre>
 </div>
@@ -445,7 +444,7 @@
 }
 </pre>
 </div>
-</li><li><div id="Brown2023-fm"><em>Brown* BC, Wang C, Kasela S, Aguet F, Nachun DC, Taylor KD, Tracy RP, Durda P, Liu Y, Craig Johnson W, Van Den Berg D, Gupta N, Gabriel S, Smith JD, Gerzsten R, Clish C, Wong Q, Papanicolau G, Blackwell TW, Rotter JI, Rich SS, Graham Barr R, Ardlie KG, Knowles* DA and Lappalainen* T</em> (2023), <strong>"Multiset correlation and factor analysis enables exploration of multi-omics data"</strong>, Cell Genomics.  *Co-corresponding.</div>
+</li><li><div id="Brown2023-fm"><em>Brown† BC, Wang C, Kasela S, Aguet F, Nachun DC, Taylor KD, Tracy RP, Durda P, Liu Y, Craig Johnson W, Van Den Berg D, Gupta N, Gabriel S, Smith JD, Gerzsten R, Clish C, Wong Q, Papanicolau G, Blackwell TW, Rotter JI, Rich SS, Graham Barr R, Ardlie KG, Knowles† DA and Lappalainen† T</em> (2023), <strong>"Multiset correlation and factor analysis enables exploration of multi-omics data"</strong>, Cell Genomics.  †Co-corresponding.</div>
 <div>[<a data-toggle="collapse" href="#abs_Brown2023-fm">Abstract</a>][<a href="#bib_Brown2023-fm" data-toggle="collapse">BibTeX</a>] [<a href="http://www.cell.com/article/S2666979X23001428/abstract" target="_blank">URL</a>]</div>
 
 <div id="abs_Brown2023-fm" class="collapse">
@@ -455,7 +454,7 @@
 <b>BibTeX</b>:
 <pre>
 @article{Brown2023-fm,
-  author = {Brown*, Brielin C and Wang, Collin and Kasela, Silva and Aguet, Fran&cedil; cois and Nachun, Daniel C and Taylor, Kent D and Tracy, Russell P and Durda, Peter and Liu, Yongmei and Craig Johnson, W and Van Den Berg, David and Gupta, Namrata and Gabriel, Stacy and Smith, Joshua D and Gerzsten, Robert and Clish, Clary and Wong, Quenna and Papanicolau, George and Blackwell, Thomas W and Rotter, Jerome I and Rich, Stephen S and Graham Barr, R and Ardlie, Kristin G and Knowles*, David A and Lappalainen*, Tuuli},
+  author = {Brown†, Brielin C and Wang, Collin and Kasela, Silva and Aguet, Francois and Nachun, Daniel C and Taylor, Kent D and Tracy, Russell P and Durda, Peter and Liu, Yongmei and Craig Johnson, W and Van Den Berg, David and Gupta, Namrata and Gabriel, Stacy and Smith, Joshua D and Gerzsten, Robert and Clish, Clary and Wong, Quenna and Papanicolau, George and Blackwell, Thomas W and Rotter, Jerome I and Rich, Stephen S and Graham Barr, R and Ardlie, Kristin G and Knowles†, David A and Lappalainen†, Tuuli},
   title = {Multiset correlation and factor analysis enables exploration of multi-omics data},
   journal = {Cell Genomics},
   year = {2023},
@@ -737,24 +736,6 @@
 }
 </pre>
 </div>
-</li><li><div id="Jang2025-vj"><em>Jang B, Bp K, Tokolyi A, Cuddleston WH, Ravi A, Jung S-H, Naito T, Kim B, Seo Kim M, Cho M, Park M-S, Rosen M, Blanchard J, Humphrey J, Knowles DA, Won H-H and Raj T</em> (2025), <strong>"SingleBrain: A meta-analysis of single-nucleus eQTLs linking genetic risk to brain disorders"</strong>, medRxiv. </div>
-<div>[<a data-toggle="collapse" href="#abs_Jang2025-vj">Abstract</a>][<a href="#bib_Jang2025-vj" data-toggle="collapse">BibTeX</a>] [<a href="https://www.medrxiv.org/content/10.1101/2025.03.06.25323424.abstract" target="_blank">URL</a>]</div>
-
-<div id="abs_Jang2025-vj" class="collapse">
-	<b>Abstract</b>: Most genetic risk variants for neurological diseases are located in non-coding regulatory regions, where they may often act as expression quantitative trait loci (eQTLs), modulating gene expression and influencing disease susceptibility. However, eQTL studies in bulk brain tissue or specific cell types lack the resolution to capture the brain's cellular diversity. Single-nucleus RNA sequencing (snRNA-seq) offers high-resolution mapping of eQTLs across diverse brain cell types. Here, we performed a meta-analysis, SingleBrain, integrating publicly available snRNA-seq and genotype data from four cohorts, totaling 5.8 million nuclei from 983 individuals. We mapped cis-eQTLs across major brain cell types and subtypes and employed statistical colocalization and Mendelian randomization to identify genes mediating neurological disease risk. We observed up to a 10-fold increase in cis-eQTLs compared to previous studies and uncovered novel cell type-specific genes linked to Alzheimer's disease, Parkinson's disease, and schizophrenia that were previously undetectable in bulk tissue analyses. Additionally, we prioritized putative causal variants for each locus through fine-mapping and integration with cell type-specific enhancer and promoter regulatory elements. SingleBrain represents a comprehensive single-cell eQTL resource, advancing insights into the genetic regulation of brain disorders.
-</div>
-<div id="bib_Jang2025-vj" class="collapse">
-<b>BibTeX</b>:
-<pre>
-@article{Jang2025-vj,
-  author = {Jang, Beomjin and Bp, Kailash and Tokolyi, Alex and Cuddleston, Winston H and Ravi, Ashvin and Jung, Sang-Hyuk and Naito, Tatsuhiko and Kim, Beomsu and Seo Kim, Min and Cho, Minyoung and Park, Mi-So and Rosen, Mikaela and Blanchard, Joel and Humphrey, Jack and Knowles, David A and Won, Hong-Hee and Raj, Towfique},
-  title = {SingleBrain: A meta-analysis of single-nucleus eQTLs linking genetic risk to brain disorders},
-  journal = {medRxiv},
-  year = {2025},
-  url = {https://www.medrxiv.org/content/10.1101/2025.03.06.25323424.abstract}
-}
-</pre>
-</div>
 </li><li><div id="Lin2025-gg"><em>Lin Z, Chang S, Zweig A, Kang M, Azizi E and Knowles DA</em> (2025), <strong>"Interpretable neural ODEs for gene regulatory network discovery under perturbations"</strong>, arXiv [cs.LG]. </div>
 <div>[<a data-toggle="collapse" href="#abs_Lin2025-gg">Abstract</a>][<a href="#bib_Lin2025-gg" data-toggle="collapse">BibTeX</a>] [<a href="https://arxiv.org/abs/2501.02409" target="_blank">URL</a>]</div>
 
@@ -795,21 +776,21 @@
 <section id="genetics">
 <h4>Genetics</h4>
 <ol>
-<li><div id="Su2025-by"><em>Su J, Qu Y, Schertzer M, Yang H, Jiang J, Lhakhang T, Nelson TM, Park S, Lai Q, Fu X, Choi S-W, Knowles† DA and Rabadan† R</em> (2025), <strong>"A computational framework for mapping isoform landscape and regulatory mechanisms from spatial transcriptomics data"</strong>, Accepted to Nature Biotechnology.  †Co-corresponding \textbf{Summary}: SPLISOSM (SpatiaL ISOform Statistical Modeling) performs kernel-based nonparametric tests of isoform usage in spatial transcriptomics. SPLISOSM identifies over 1,000 spatially variable isoforms in the mouse brain, primarily in synaptic signaling pathways, and uncovers regulation by specific RNA binding proteins. Analysis of human glioblastoma demonstrates pervasive isoform diversity in antigen presentation and adhesion genes associated with specific microenvironmental conditions..</div>
-<div>[<a data-toggle="collapse" href="#abs_Su2025-by">Abstract</a>][<a href="#bib_Su2025-by" data-toggle="collapse">BibTeX</a>] [<a href="https://www.biorxiv.org/content/10.1101/2025.05.02.651907.abstract" target="_blank">URL</a>]</div>
+<li><div id="Jang2025-vj"><em>Jang B, Bp K, Tokolyi A, Cuddleston WH, Ravi A, Jung S-H, Naito T, Kim B, Seo Kim M, Cho M, Park M-S, Rosen M, Blanchard J, Humphrey J, Knowles DA, Won H-H and Raj T</em> (2025), <strong>"SingleBrain: A meta-analysis of single-nucleus eQTLs linking genetic risk to brain disorders"</strong>, Accepted at Nature Genetics. </div>
+<div>[<a data-toggle="collapse" href="#abs_Jang2025-vj">Abstract</a>][<a href="#bib_Jang2025-vj" data-toggle="collapse">BibTeX</a>] [<a href="https://www.medrxiv.org/content/10.1101/2025.03.06.25323424.abstract" target="_blank">URL</a>]</div>
 
-<div id="abs_Su2025-by" class="collapse">
-	<b>Abstract</b>: Transcript diversity including splicing and alternative 3’end usage is crucial for cellular identity and adaptation, yet its spatial coordination remains poorly understood. Here, we present SPLISOSM (SpatiaL ISOform Statistical Modeling), a computational framework for detecting isoform-resolution patterns from spatial transcriptomics data. SPLISOSM leverages multivariate testing to account for spot- and isoform-level dependencies, demonstrating robust and theoretically grounded performance on sparse data. In the mouse brain, we identify over 1,000 spatially variable transcript diversity events, primarily in synaptic signaling pathways linked to neuropsychiatric disorders, and uncover both known and novel regulatory relationships with region-specific RNA binding proteins. We further show that these patterns are evolutionarily conserved between mouse and human prefrontal cortex. Analysis of human glioblastoma highlights pervasive transcript diversity in antigen presentation and adhesion genes associated with specific microenvironmental conditions. Together, we present a comprehensive spatial splicing analysis in the brain under normal and neoplastic conditions.
+<div id="abs_Jang2025-vj" class="collapse">
+	<b>Abstract</b>: Most genetic risk variants for neurological diseases are located in non-coding regulatory regions, where they may often act as expression quantitative trait loci (eQTLs), modulating gene expression and influencing disease susceptibility. However, eQTL studies in bulk brain tissue or specific cell types lack the resolution to capture the brain's cellular diversity. Single-nucleus RNA sequencing (snRNA-seq) offers high-resolution mapping of eQTLs across diverse brain cell types. Here, we performed a meta-analysis, SingleBrain, integrating publicly available snRNA-seq and genotype data from four cohorts, totaling 5.8 million nuclei from 983 individuals. We mapped cis-eQTLs across major brain cell types and subtypes and employed statistical colocalization and Mendelian randomization to identify genes mediating neurological disease risk. We observed up to a 10-fold increase in cis-eQTLs compared to previous studies and uncovered novel cell type-specific genes linked to Alzheimer's disease, Parkinson's disease, and schizophrenia that were previously undetectable in bulk tissue analyses. Additionally, we prioritized putative causal variants for each locus through fine-mapping and integration with cell type-specific enhancer and promoter regulatory elements. SingleBrain represents a comprehensive single-cell eQTL resource, advancing insights into the genetic regulation of brain disorders.
 </div>
-<div id="bib_Su2025-by" class="collapse">
+<div id="bib_Jang2025-vj" class="collapse">
 <b>BibTeX</b>:
 <pre>
-@article{Su2025-by,
-  author = {Su, Jiayu and Qu, Yiming and Schertzer, Megan and Yang, Haochen and Jiang, Jiahao and Lhakhang, Tenzin and Nelson, Theodore M and Park, Stella and Lai, Qiliang and Fu, Xi and Choi, Seung-Won and Knowles†, David A and Rabadan†, Raul},
-  title = {A computational framework for mapping isoform landscape and regulatory mechanisms from spatial transcriptomics data},
-  journal = {Accepted to Nature Biotechnology},
+@article{Jang2025-vj,
+  author = {Jang, Beomjin and Bp, Kailash and Tokolyi, Alex and Cuddleston, Winston H and Ravi, Ashvin and Jung, Sang-Hyuk and Naito, Tatsuhiko and Kim, Beomsu and Seo Kim, Min and Cho, Minyoung and Park, Mi-So and Rosen, Mikaela and Blanchard, Joel and Humphrey, Jack and Knowles, David A and Won, Hong-Hee and Raj, Towfique},
+  title = {SingleBrain: A meta-analysis of single-nucleus eQTLs linking genetic risk to brain disorders},
+  journal = {Accepted at Nature Genetics},
   year = {2025},
-  url = {https://www.biorxiv.org/content/10.1101/2025.05.02.651907.abstract}
+  url = {https://www.medrxiv.org/content/10.1101/2025.03.06.25323424.abstract}
 }
 </pre>
 </div>
@@ -868,8 +849,8 @@
 }
 </pre>
 </div>
-</li><li><div id="Moses2025-kh"><em>Moses AM, Stajich JE, Gasch AP and Knowles DA</em> (2025), <strong>"Inferring fungal cis-regulatory networks from genome sequences"</strong>, Accepted at Genetics. </div>
-<div>[<a data-toggle="collapse" href="#abs_Moses2025-kh">Abstract</a>][<a href="#bib_Moses2025-kh" data-toggle="collapse">BibTeX</a>] [<a href="https://www.biorxiv.org/content/10.1101/2025.02.27.640643.abstract" target="_blank">URL</a>]</div>
+</li><li><div id="Moses2025-kh"><em>Moses AM, Stajich JE, Gasch AP and Knowles DA</em> (2025), <strong>"Inferring fungal cis-regulatory networks from genome sequences"</strong>, Genetics. </div>
+<div>[<a data-toggle="collapse" href="#abs_Moses2025-kh">Abstract</a>][<a href="#bib_Moses2025-kh" data-toggle="collapse">BibTeX</a>] [<a href="https://doi.org/10.1093/genetics/iyaf209" target="_blank">URL</a>]</div>
 
 <div id="abs_Moses2025-kh" class="collapse">
 	<b>Abstract</b>: Gene expression patterns are determined to a large extent by transcription factor binding to non-coding regulatory regions in the genome. However, gene expression cannot yet be systematically predicted from genome sequences, in part because non-functional matches to the sequence patterns (motifs) recognized by transcription factors (TFs) occur frequently throughout the genome. Large-scale functional genomics data for many TFs has enabled characterization of regulatory networks in experimentally accessible cells such as budding yeast. Beyond yeast, fungi are important industrial organisms and pathogens, but large-scale functional data is only sporadically available. Uncharacterized regulatory networks control key pathways and gene expression programs associated with fungal phenotypes. Here we explore a sequence-only approach to inferring regulatory networks by leveraging the 100s of genomes now available for many clades of fungi. We use gene orthology as the learning signal to infer interpretable, TF motif-based representations of non-coding regulatory regions, thus scaling comparative genomics beyond evolutionary comparisons where these regions can be aligned. We show that similarity of promoters in our motif-based representation predicts gene co-expression, and that we can infer known and novel regulatory connections in diverse fungi. Our new predictions include a pathway for recombination inC. albicans and pathways for mating and an RNAi immune response inNeurospora. Taken together, our results indicate that specific hypotheses about transcriptional regulation in fungi can be obtained for many genes from genome sequence analysis alone.
@@ -880,9 +861,9 @@
 @article{Moses2025-kh,
   author = {Moses, Alan M and Stajich, Jason E and Gasch, Audrey P and Knowles, David A},
   title = {Inferring fungal cis-regulatory networks from genome sequences},
-  journal = {Accepted at Genetics},
+  journal = {Genetics},
   year = {2025},
-  url = {https://www.biorxiv.org/content/10.1101/2025.02.27.640643.abstract}
+  url = {https://doi.org/10.1093/genetics/iyaf209}
 }
 </pre>
 </div>
