@@ -15,7 +15,7 @@ cat >>index.html <<EOL
 <h4>Under submission</h4>
 EOL
 
-cat publications/working.html >> index.html
+cat publications/working.html | sed 's#</strong>, In #</strong>, #g' >> index.html
 
 cat >>index.html <<EOL
 </section>
@@ -31,7 +31,7 @@ cat >>index.html <<EOL
 <h4>Machine learning/statistics</h4>
 EOL
 
-cat publications/ml.html >> index.html
+cat publications/ml.html | sed 's#</strong>, In #</strong>, #g' >> index.html
 
 cat >>index.html <<EOL
 </section>

@@ -1,3 +1,90 @@
+@ARTICLE{Humphrey2026-lk,
+  title    = "The New York Genome Center {ALS} Consortium resource integrates
+              postmortem tissue transcriptomics and whole genome sequencing to
+              empower biological discovery",
+  author   = "Humphrey, Jack and Oku, Ali and Byrska-Bishop, Marta and Basile,
+              Anna O and Evani, Uday S and Corvelo, André and Tokolyi, Alex and
+              Bp, Kailash and Réal, Aline and Kim, Yebin and Bond, Marielle L
+              and Clarke, Wayne E and Fu, Rui and Geiger, Heather and Chang, Sei
+              and Naito, Tatsuhiko and Jang, Beomjin and Musunuri, Rajeeva and
+              Dredge, Winston H and Al-Abri, Rashid and Hoover, Benjamin N and
+              Manaa, Dina and Mcclintock, Jaime and Singh, Faith P and Pedersen,
+              Maria H and Runnels, Alexi and Propp, Nadia and Fennessey,
+              Samantha and Won, Hong-Hee and Zody, Michael C and Narzisi,
+              Giuseppe and Robine, Nicolas and Lappalainen, Tuuli and
+              Fagegaltier, Delphine and Gürsoy, Gamze and Knowles, David A and
+              Raj, Towfique and {NYGC ALS Consortium} and Harms, Matthew B and
+              Phatnani, Hemali",
+  journal  = "medRxiv",
+  pages    = "2026.04.29.26350889",
+  abstract = "Amyotrophic lateral sclerosis (ALS) is a devastating
+              neurodegenerative disease with substantial genetic and clinical
+              heterogeneity that impedes therapeutic development. Large-scale
+              multi-tissue genomic resources have transformed the study of
+              neuropsychiatric and neurodegenerative diseases, but no equivalent
+              resource exists for ALS. Here we present the full NYGC ALS
+              Consortium dataset, combining whole-genome sequencing from 4,746
+              donors and bulk RNA-seq from 2,574 samples across 8 brain and
+              spinal cord regions from 695 donors across the ALS disease
+              spectrum. Our catalogue of small variants, structural variants,
+              and short tandem repeats identified likely pathogenic mutations in
+              15.6\% of ALS cases. Gene expression and mRNA splicing analysis
+              across 5 major tissues reveals shared and region-specific
+              features, highlighting microglial and T-cell dysregulation in the
+              spinal cord. Mapping the genetic regulation of expression and
+              splicing across tissues identified associations with 6 ALS risk
+              loci, whereas allele-specific rare variant analysis detected
+              expression effects for C9orf72 and OPTN. All data are immediately
+              publicly available.",
+  month    =  may,
+  year     =  2026,
+  url      = "http://dx.doi.org/10.64898/2026.04.29.26350889",
+    keywords = {Submitted}
+}
+
+
+@ARTICLE{Talukder2026-st,
+  title    = "{CLADES} -contrastive learning augmented {DifferEntial} splicing
+              with orthologous positive pairs",
+  author   = "Talukder, Arghamitra and Keung, Nicholas and Pe'er†, Itsik and
+              Knowles†, David A",
+  journal  = "RECOMB",
+  pages    = "2026.02.20.707118",
+  abstract = "Alternative splicing (AS) reshapes transcript and protein
+              repertoires across biological, e.g. cellular, contexts. However,
+              learning sequence→ content-specific splicing mappings is
+              challenging due to limited labels across tissues and cell types
+              and variability introduced by experimental protocols. We propose a
+              contrastive representation learning pre-training approach grounded
+              in evolutionary conservation. Orthologous exon-intron junction
+              sequences are treated as semantically consistent views of the same
+              regulatory program: evolutionary orthologs are positive pairs,
+              non-homologous junctions are negatives. This discriminative
+              objective aligns embeddings of regulatory equivalents while
+              separating functionally unrelated sequences, inducing invariances
+              to unconstrained sequence and emphasizing conserved motif/RBP and
+              positional signals. We show that this pre-training strategy
+              provides representations that help predict ∆ψ, the change in exon
+              inclusion between conditions, which encodes both direction and
+              magnitude of splicing shifts. Specifically, we finetune a
+              lightweight supervised head on available labels to predict ∆ψ. To
+              make these predictions biologically meaningful, we further
+              introduce an interpretable, splice-motif-aware classification
+              framework grounded in known regulatory signals. On benchmarks
+              spanning tissue-and cell-type differential splicing, the learned
+              representations yield strong ∆ψ classification performance
+              (AUPRC/AUROC for increased/decreased inclusion) and competitive
+              results for regression (RMSE, Spearman). These findings indicate
+              that evolution-as-augmentation, instantiated via contrastive
+              learning, is an effective and biologically principled route to
+              context-resolved splicing prediction.",
+  bibbase_note = {†Co-corresponding},
+  year     =  2026,
+  url      = "http://dx.doi.org/10.64898/2026.02.20.707118",
+    keywords = {Genetics}
+}
+
+
 @ARTICLE{Isaev2025-zt,
   title       = "Aging-associated alternative splicing programs conserved
                  between human and mouse tissues",
@@ -39,10 +126,10 @@
 
 
 @ARTICLE{Lakhani2025-bm,
-  title    = "Machine learning-based prediction of cell-type resolved brain {eQTLs} enhances discovery of variants explaining Alzheimer'sdisease heritability",
+  title    = "Machine learning-based prediction of cell-type resolved brain {eQTLs} enhances discovery of variants explaining Alzheimer's disease heritability",
   author   = "Lakhani, C and Cavalca, G and Liu, A and Nidumbur, R and Feng, R
               and Raj, T and De Jager, P and {The Alzheimer's Disease Functional
-              Genomics Consor} and Wang, G and Knowles, D A",
+              Genomics Consortium} and Wang, G and Knowles, D A",
   journal  = "medRxiv",
   pages    = "2025.12.03.25341562",
   abstract = "The majority of causal genome-wide association studies (GWAS)
@@ -508,12 +595,37 @@ bibbase_note = {†Co-corresponding},
   url      = "https://www.nature.com/articles/s41587-025-02965-6", 
 }
 
-@ARTICLE{Zweig2025-cd,
+@inproceedings{Zweig2026-dl,
+  title         = "Learning lineage-guided geodesics with Finsler geometry",
+  author        = "Zweig, Aaron and Zhang, Mingxuan and Knowles, David A and Azizi, Elham",
+  booktitle       = "Uncertainty in Artificial Intelligence (UAI)",
+  abstract      = "Trajectory inference investigates how to interpolate paths
+                   between observed timepoints of dynamical systems, such as
+                   temporally resolved population distributions, with the goal
+                   of inferring trajectories at unseen times and better
+                   understanding system dynamics. Previous work has focused on
+                   continuous geometric priors, utilizing data-dependent spatial
+                   features to define a Riemannian metric. In many applications,
+                   there exists discrete, directed prior knowledge over
+                   admissible transitions (e.g. lineage trees in developmental
+                   biology). We introduce a Finsler metric that combines
+                   geometry with classification and incorporate both types of
+                   priors in trajectory inference, yielding improved performance
+                   on interpolation tasks in synthetic and real-world data.",
+  month         =  mar,
+  year          =  2026,
+  url           = "http://dx.doi.org/10.48550/arXiv.2603.16708",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  keywords = {mlstats}
+}
+
+@inproceedings{Zweig2026-cd,
   title         = "Towards identifiability of interventional stochastic
                    differential equations",
   author        = "Zweig, Aaron and Lin, Zaikang and Azizi, Elham and Knowles,
                    David A",
-  journal       = "arXiv [cs.LG]",
+  booktitle       = "Uncertainty in Artificial Intelligence (UAI)",
   abstract      = "We study identifiability of stochastic differential equation
                    (SDE) models under multiple interventions. Our results give
                    the first provable bounds for unique recovery of SDE
@@ -525,8 +637,8 @@ bibbase_note = {†Co-corresponding},
                    theoretical results, demonstrate the advantage of
                    parameterizations with learnable activation functions.",
   month         =  may,
-  year          =  2025,
-  keywords = {Submitted},
+  year          =  2026,
+  keywords = {mlstats},
   url           = "http://arxiv.org/abs/2505.15987",
   archivePrefix = "arXiv",
   primaryClass  = "cs.LG"
@@ -539,11 +651,10 @@ Winston H and Ravi, Ashvin and Jung, Sang-Hyuk and Naito,
 Tatsuhiko and Kim, Beomsu and Seo Kim, Min and Cho, Minyoung and
 Park, Mi-So and Rosen, Mikaela and Blanchard, Joel and Humphrey,
 Jack and Knowles, David A and Won, Hong-Hee and Raj, Towfique},
- journal = {Accepted at Nature Genetics},
+ journal = {Nature Genetics},
  keywords = {Genetics},
  language = {en},
- title = {{SingleBrain}: A meta-analysis of single-nucleus {eQTLs} linking
-genetic risk to brain disorders},
+ title = {{SingleBrain}: A meta-analysis of single-nucleus {eQTLs} linking genetic risk to brain disorders},
  url = {https://www.medrxiv.org/content/10.1101/2025.03.06.25323424.abstract},
  year = {2025}
 }
@@ -720,18 +831,18 @@ Knowles, David A},
  year = {2025}
 }
 
-@article{Lin2025-gg,
+@inproceedings{Lin2026-gg,
  abstract = {Modern high-throughput biological datasets with thousands of perturbations provide the opportunity for large-scale discovery of causal graphs that represent the regulatory interactions between genes. Differentiable causal graphical models have been proposed to infer a gene regulatory network (GRN) from large scale interventional datasets, capturing the causal gene regulatory relationships from genetic perturbations. However, existing models are limited in their expressivity and scalability while failing to address the dynamic nature of biological processes such as cellular differentiation. We propose PerturbODE, a novel framework that incorporates biologically informative neural ordinary differential equations (neural ODEs) to model cell state trajectories under perturbations and derive the causal GRN from the neural ODE's parameters. We demonstrate PerturbODE's efficacy in trajectory prediction and GRN inference across simulated and real over-expression datasets.},
  archiveprefix = {arXiv},
  author = {Lin, Zaikang and Chang, Sei and Zweig, Aaron and Kang, Minseo
 and Azizi, Elham and Knowles, David A},
- journal = {arXiv [cs.LG]},
- keywords = {Submitted},
+ booktitle = {International Conference on Machine Learning (ICML)},
+ keywords = {mlstats},
  primaryclass = {cs.LG},
  title = {Interpretable neural {ODEs} for gene regulatory network
 discovery under perturbations},
  url = {https://arxiv.org/abs/2501.02409},
- year = {2025}
+ year = {2026}
 }
 
 @article{Das2025-uy,
@@ -787,11 +898,11 @@ Mechanistic Cellular Dynamics},
 
 @inproceedings{Stirn2024-qw,
  abstract = {Widely used deep latent variable models (DLVMs), in particular Variational Autoencoders (VAEs), employ overly simplistic priors on the latent space. To achieve strong clustering performance, existing methods that replace the standard normal prior with a Gaussian mixture model (GMM) require defining the number of clusters to be close to the number of expected ground truth classes a-priori and are susceptible to poor initializations. We leverage VampPrior concepts (Tomczak and Welling, 2018) to fit a Bayesian GMM prior, resulting in the VampPrior Mixture Model (VMM), a novel prior for DLVMs. In a VAE, the VMM attains highly competitive clustering performance on benchmark datasets. Integrating the VMM into scVI (Lopez et al., 2018), a popular scRNA-seq integration method, significantly improves its performance and automatically arranges cells into clusters with similar biological characteristics.},
- booktitle = {AISTATS},
+ booktitle = {Artificial Intelligence and Statistics (AISTATS)},
  author = {Stirn, Andrew and Knowles, David A},
  keywords = {mlstats},
  title = {The {VampPrior} Mixture Model},
- url = {https://openreview.net/forum?id=tvHsQIe8LO},
+ url = {https://proceedings.mlr.press/v258/stirn25a.html},
  year = {2025}
 }
 
