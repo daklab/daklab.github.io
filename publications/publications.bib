@@ -22,6 +22,32 @@ empower biological discovery},
  year = {2026}
 }
 
+@inproceedings{Zweig2026-dl,
+ abstract = {Trajectory inference investigates how to interpolate paths between observed timepoints of dynamical systems, such as temporally resolved population distributions, with the goal of inferring trajectories at unseen times and better understanding system dynamics. Previous work has focused on continuous geometric priors, utilizing data-dependent spatial features to define a Riemannian metric. In many applications, there exists discrete, directed prior knowledge over admissible transitions (e.g. lineage trees in developmental biology). We introduce a Finsler metric that combines geometry with classification and incorporate both types of priors in trajectory inference, yielding improved performance on interpolation tasks in synthetic and real-world data.},
+ archiveprefix = {arXiv},
+ author = {Zweig, Aaron and Zhang, Mingxuan and Knowles, David A and Azizi, Elham},
+ booktitle = {Uncertainty in Artificial Intelligence (UAI)},
+ keywords = {mlstats},
+ primaryclass = {cs.LG},
+ title = {Learning lineage-guided geodesics with Finsler geometry},
+ url = {http://dx.doi.org/10.48550/arXiv.2603.16708},
+ year = {2026}
+}
+
+@inproceedings{Zweig2026-cd,
+ abstract = {We study identifiability of stochastic differential equation (SDE) models under multiple interventions. Our results give the first provable bounds for unique recovery of SDE parameters given samples from their stationary distributions. We give tight bounds on the number of necessary interventions for linear SDEs, and upper bounds for nonlinear SDEs in the small noise regime. We experimentally validate the recovery of true parameters in synthetic data, and motivated by our theoretical results, demonstrate the advantage of parameterizations with learnable activation functions.},
+ archiveprefix = {arXiv},
+ author = {Zweig, Aaron and Lin, Zaikang and Azizi, Elham and Knowles,
+David A},
+ booktitle = {Uncertainty in Artificial Intelligence (UAI)},
+ keywords = {mlstats},
+ primaryclass = {cs.LG},
+ title = {Towards identifiability of interventional stochastic
+differential equations},
+ url = {http://arxiv.org/abs/2505.15987},
+ year = {2026}
+}
+
 @article{Talukder2026-st,
  abstract = {Alternative splicing (AS) reshapes transcript and protein repertoires across biological, e.g. cellular, contexts. However, learning sequence→ content-specific splicing mappings is challenging due to limited labels across tissues and cell types and variability introduced by experimental protocols. We propose a contrastive representation learning pre-training approach grounded in evolutionary conservation. Orthologous exon-intron junction sequences are treated as semantically consistent views of the same regulatory program: evolutionary orthologs are positive pairs, non-homologous junctions are negatives. This discriminative objective aligns embeddings of regulatory equivalents while separating functionally unrelated sequences, inducing invariances to unconstrained sequence and emphasizing conserved motif/RBP and positional signals. We show that this pre-training strategy provides representations that help predict ∆ψ, the change in exon inclusion between conditions, which encodes both direction and magnitude of splicing shifts. Specifically, we finetune a lightweight supervised head on available labels to predict ∆ψ. To make these predictions biologically meaningful, we further introduce an interpretable, splice-motif-aware classification framework grounded in known regulatory signals. On benchmarks spanning tissue-and cell-type differential splicing, the learned representations yield strong ∆ψ classification performance (AUPRC/AUROC for increased/decreased inclusion) and competitive results for regression (RMSE, Spearman). These findings indicate that evolution-as-augmentation, instantiated via contrastive learning, is an effective and biologically principled route to context-resolved splicing prediction.},
  author = {Talukder, Arghamitra and Keung, Nicholas and Pe'er†, Itsik and
@@ -67,6 +93,20 @@ Genomics Consortium} and Wang, G and Knowles, D A},
  title = {Robust integration of sparse single-cell alternative splicing and gene expression data with {SpliceVI}},
  url = {https://www.biorxiv.org/content/10.1101/2025.11.26.690853v1.abstract},
  year = {2025}
+}
+
+@inproceedings{Lin2026-gg,
+ abstract = {Modern high-throughput biological datasets with thousands of perturbations provide the opportunity for large-scale discovery of causal graphs that represent the regulatory interactions between genes. Differentiable causal graphical models have been proposed to infer a gene regulatory network (GRN) from large scale interventional datasets, capturing the causal gene regulatory relationships from genetic perturbations. However, existing models are limited in their expressivity and scalability while failing to address the dynamic nature of biological processes such as cellular differentiation. We propose PerturbODE, a novel framework that incorporates biologically informative neural ordinary differential equations (neural ODEs) to model cell state trajectories under perturbations and derive the causal GRN from the neural ODE's parameters. We demonstrate PerturbODE's efficacy in trajectory prediction and GRN inference across simulated and real over-expression datasets.},
+ archiveprefix = {arXiv},
+ author = {Lin, Zaikang and Chang, Sei and Zweig, Aaron and Kang, Minseo
+and Azizi, Elham and Knowles, David A},
+ booktitle = {International Conference on Machine Learning (ICML)},
+ keywords = {mlstats},
+ primaryclass = {cs.LG},
+ title = {Interpretable neural {ODEs} for gene regulatory network
+discovery under perturbations},
+ url = {https://arxiv.org/abs/2501.02409},
+ year = {2026}
 }
 
 @article{Lee2025-ue,
@@ -220,32 +260,6 @@ regulatory mechanisms from spatial transcriptomics data},
  year = {2026}
 }
 
-@inproceedings{Zweig2026-dl,
- abstract = {Trajectory inference investigates how to interpolate paths between observed timepoints of dynamical systems, such as temporally resolved population distributions, with the goal of inferring trajectories at unseen times and better understanding system dynamics. Previous work has focused on continuous geometric priors, utilizing data-dependent spatial features to define a Riemannian metric. In many applications, there exists discrete, directed prior knowledge over admissible transitions (e.g. lineage trees in developmental biology). We introduce a Finsler metric that combines geometry with classification and incorporate both types of priors in trajectory inference, yielding improved performance on interpolation tasks in synthetic and real-world data.},
- archiveprefix = {arXiv},
- author = {Zweig, Aaron and Zhang, Mingxuan and Knowles, David A and Azizi, Elham},
- booktitle = {Uncertainty in Artificial Intelligence (UAI)},
- keywords = {mlstats},
- primaryclass = {cs.LG},
- title = {Learning lineage-guided geodesics with Finsler geometry},
- url = {http://dx.doi.org/10.48550/arXiv.2603.16708},
- year = {2026}
-}
-
-@inproceedings{Zweig2026-cd,
- abstract = {We study identifiability of stochastic differential equation (SDE) models under multiple interventions. Our results give the first provable bounds for unique recovery of SDE parameters given samples from their stationary distributions. We give tight bounds on the number of necessary interventions for linear SDEs, and upper bounds for nonlinear SDEs in the small noise regime. We experimentally validate the recovery of true parameters in synthetic data, and motivated by our theoretical results, demonstrate the advantage of parameterizations with learnable activation functions.},
- archiveprefix = {arXiv},
- author = {Zweig, Aaron and Lin, Zaikang and Azizi, Elham and Knowles,
-David A},
- booktitle = {Uncertainty in Artificial Intelligence (UAI)},
- keywords = {mlstats},
- primaryclass = {cs.LG},
- title = {Towards identifiability of interventional stochastic
-differential equations},
- url = {http://arxiv.org/abs/2505.15987},
- year = {2026}
-}
-
 @article{Jang2025-vj,
  abstract = {Most genetic risk variants for neurological diseases are located in non-coding regulatory regions, where they may often act as expression quantitative trait loci (eQTLs), modulating gene expression and influencing disease susceptibility. However, eQTL studies in bulk brain tissue or specific cell types lack the resolution to capture the brain's cellular diversity. Single-nucleus RNA sequencing (snRNA-seq) offers high-resolution mapping of eQTLs across diverse brain cell types. Here, we performed a meta-analysis, SingleBrain, integrating publicly available snRNA-seq and genotype data from four cohorts, totaling 5.8 million nuclei from 983 individuals. We mapped cis-eQTLs across major brain cell types and subtypes and employed statistical colocalization and Mendelian randomization to identify genes mediating neurological disease risk. We observed up to a 10-fold increase in cis-eQTLs compared to previous studies and uncovered novel cell type-specific genes linked to Alzheimer's disease, Parkinson's disease, and schizophrenia that were previously undetectable in bulk tissue analyses. Additionally, we prioritized putative causal variants for each locus through fine-mapping and integration with cell type-specific enhancer and promoter regulatory elements. SingleBrain represents a comprehensive single-cell eQTL resource, advancing insights into the genetic regulation of brain disorders.},
  author = {Jang, Beomjin and Bp, Kailash and Tokolyi, Alex and Cuddleston,
@@ -253,11 +267,10 @@ Winston H and Ravi, Ashvin and Jung, Sang-Hyuk and Naito,
 Tatsuhiko and Kim, Beomsu and Seo Kim, Min and Cho, Minyoung and
 Park, Mi-So and Rosen, Mikaela and Blanchard, Joel and Humphrey,
 Jack and Knowles, David A and Won, Hong-Hee and Raj, Towfique},
- journal = {Accepted at Nature Genetics},
+ journal = {Nature Genetics},
  keywords = {Genetics},
  language = {en},
- title = {{SingleBrain}: A meta-analysis of single-nucleus {eQTLs} linking
-genetic risk to brain disorders},
+ title = {{SingleBrain}: A meta-analysis of single-nucleus {eQTLs} linking genetic risk to brain disorders},
  url = {https://www.medrxiv.org/content/10.1101/2025.03.06.25323424.abstract},
  year = {2025}
 }
@@ -343,20 +356,6 @@ Knowles, David A},
  title = {Inferring fungal cis-regulatory networks from genome sequences},
  url = {https://doi.org/10.1093/genetics/iyaf209},
  year = {2025}
-}
-
-@inproceedings{Lin2026-gg,
- abstract = {Modern high-throughput biological datasets with thousands of perturbations provide the opportunity for large-scale discovery of causal graphs that represent the regulatory interactions between genes. Differentiable causal graphical models have been proposed to infer a gene regulatory network (GRN) from large scale interventional datasets, capturing the causal gene regulatory relationships from genetic perturbations. However, existing models are limited in their expressivity and scalability while failing to address the dynamic nature of biological processes such as cellular differentiation. We propose PerturbODE, a novel framework that incorporates biologically informative neural ordinary differential equations (neural ODEs) to model cell state trajectories under perturbations and derive the causal GRN from the neural ODE's parameters. We demonstrate PerturbODE's efficacy in trajectory prediction and GRN inference across simulated and real over-expression datasets.},
- archiveprefix = {arXiv},
- author = {Lin, Zaikang and Chang, Sei and Zweig, Aaron and Kang, Minseo
-and Azizi, Elham and Knowles, David A},
- booktitle = {International Conference on Machine Learning (ICML)},
- keywords = {mlstats},
- primaryclass = {cs.LG},
- title = {Interpretable neural {ODEs} for gene regulatory network
-discovery under perturbations},
- url = {https://arxiv.org/abs/2501.02409},
- year = {2026}
 }
 
 @article{Das2025-uy,
