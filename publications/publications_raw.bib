@@ -1,3 +1,44 @@
+@ARTICLE{Liu2025-fv,
+  title    = "Distributional genetic effects reveal context-dependent molecular
+              regulation in human brain aging and Alzheimer’s disease",
+  author   = "Liu, Anjing and Jiang, Roulan and Li, Ruixi and Cao, Xuewei and
+              Qi, Zining and Feng, Ru and Sun, Hao and Fujita, Masashi and
+              Comandante-Lou, Natacha and Lakhani, Chirag M and Empawi, Jenny
+              and Knowles, David A and Zhang, Xiaoling and Dey, Kushal K and De
+              Jager, Philip and Bennett, David and Wang, Tianying and Wang, Gao",
+  abstract = "Molecular QTL studies quantify whether genetic variants affect
+              molecular traits, but non-linear effects including distributional
+              patterns, variance, and interactions provide mechanistic insights
+              beyond mean-level associations. Methods for detecting
+              distributional effects have been developed for eQTL analysis, yet
+              applications have focused on method demonstrations rather than
+              large-scale biological discovery. We comprehensively mapped
+              quantile, variance, and interaction QTLs across 34 data-set from
+              22 molecular contexts in> 2,300 human brain donors, revealing that
+              48.7\% of quantile QTLs (qQTLs) exhibit context-dependent
+              regulation invisible to linear models, with enrichment at
+              phenotypic extremes and in cell-type-specific regulatory elements,
+              chromatin accessibility regions, and long-range chromosomal
+              contacts. qQTL variants explained additional trait heritability
+              beyond linear QTLs for brain-related traits. At Alzheimer’s
+              disease (AD) risk loci, qQTL analysis revealed complex regulatory
+              architecture including variance effects at PITRM1,
+              lower-quantile-specific effects at TMEM106B partially explained by
+              APOE ε4 interactions, and coordinated epigenetic regulation at
+              loci harboring CHRNE/SCIMP/RABEP1. Quantile-based
+              transcriptome-wide association studies identified 34 AD risk genes
+              and additional aging-related genes beyond standard TWAS, with
+              enrichment in immune regulation and telomere maintenance pathways
+              where distributional effects may reflect threshold-dependent
+              mechanisms. Our non-linear QTL atlas and qTWAS resource enable
+              characterization of context-dependent regulatory effects in
+              complex disease genetics.",
+  month    =  dec,
+  year     =  2025,
+  keywords = {Submitted},
+  url      = "https://www.researchsquare.com/article/rs-8219833/latest"
+}
+
 @article{Schertzer2026LRP2,
   title        = {{LRP2}: A proteogenomics pipeline for long-read informed protein isoform analysis and discovery},
   author       = {Schertzer, Megan D. and Lewandowski, Julia T. and Watts, Emily F. and Rosenow, Will and Mehlferber, Madison M. and Jeffery, Erin D. and Adamson, Scott I. and Bruand, Jocelyne and Tseng, Elizabeth and Neelamraju, Yaseswini and Garrett-Bakelman, Francine E. and Dolzhenko, Egor and Knowles, David A. and Sheynkman, Gloria},
@@ -63,7 +104,7 @@
               Fagegaltier, Delphine and Gürsoy, Gamze and Knowles, David A and
               Raj, Towfique and {NYGC ALS Consortium} and Harms, Matthew B and
               Phatnani, Hemali",
-  journal  = "medRxiv",
+  journal  = "medRxiv \& under review at Cell",
   pages    = "2026.04.29.26350889",
   abstract = "Amyotrophic lateral sclerosis (ALS) is a devastating
               neurodegenerative disease with substantial genetic and clinical
@@ -111,10 +152,12 @@
   month         =  mar,
   year          =  2026,
   url           = "http://dx.doi.org/10.48550/arXiv.2603.16708",
+  Url_Preprint   = "https://proceedings.mlr.press/v337/zweig26b.html", 
   archivePrefix = "arXiv",
   primaryClass  = "cs.LG",
   keywords = {mlstats}
 }
+
 
 @inproceedings{Zweig2026-cd,
   title         = "Towards identifiability of interventional stochastic
@@ -135,48 +178,46 @@
   month         =  may,
   year          =  2026,
   keywords = {mlstats},
-  url           = "http://arxiv.org/abs/2505.15987",
+  Url_Preprint           = "http://arxiv.org/abs/2505.15987",
+  url   = "https://proceedings.mlr.press/v337/zweig26a.html",
   archivePrefix = "arXiv",
   primaryClass  = "cs.LG"
 }
 
 
-
-@ARTICLE{Talukder2026-st,
-  title    = "{CLADES} -contrastive learning augmented {DifferEntial} splicing
-              with orthologous positive pairs",
-  author   = "Talukder, Arghamitra and Keung, Nicholas and Pe'er†, Itsik and
-              Knowles†, David A",
-  journal  = "RECOMB",
-  pages    = "2026.02.20.707118",
+@inproceedings{Talukder2026-st,
+  title    = "{CLADES}-contrastive learning augmented {DifferEntial} splicing with orthologous positive pairs",
+  author   = "Talukder, Arghamitra and Keung, Nicholas and Pe'er†, Itsik and Knowles†, David A",
+  booktitle  = "Research in Computational Molecular Biology (RECOMB)",
   abstract = "Alternative splicing (AS) reshapes transcript and protein
-              repertoires across biological, e.g. cellular, contexts. However,
-              learning sequence→ content-specific splicing mappings is
-              challenging due to limited labels across tissues and cell types
-              and variability introduced by experimental protocols. We propose a
-              contrastive representation learning pre-training approach grounded
-              in evolutionary conservation. Orthologous exon-intron junction
-              sequences are treated as semantically consistent views of the same
-              regulatory program: evolutionary orthologs are positive pairs,
-              non-homologous junctions are negatives. This discriminative
-              objective aligns embeddings of regulatory equivalents while
-              separating functionally unrelated sequences, inducing invariances
-              to unconstrained sequence and emphasizing conserved motif/RBP and
-              positional signals. We show that this pre-training strategy
-              provides representations that help predict ∆ψ, the change in exon
-              inclusion between conditions, which encodes both direction and
-              magnitude of splicing shifts. Specifically, we finetune a
-              lightweight supervised head on available labels to predict ∆ψ. To
-              make these predictions biologically meaningful, we further
-              introduce an interpretable, splice-motif-aware classification
-              framework grounded in known regulatory signals. On benchmarks
-              spanning tissue-and cell-type differential splicing, the learned
-              representations yield strong ∆ψ classification performance
-              (AUPRC/AUROC for increased/decreased inclusion) and competitive
-              results for regression (RMSE, Spearman). These findings indicate
-              that evolution-as-augmentation, instantiated via contrastive
-              learning, is an effective and biologically principled route to
-              context-resolved splicing prediction.",
+            repertoires across biological, e.g. cellular, contexts. However,
+            learning sequence→ content-specific splicing mappings is
+            challenging due to limited labels across tissues and cell types
+            and variability introduced by experimental protocols. We propose a
+            contrastive representation learning pre-training approach grounded
+            in evolutionary conservation. Orthologous exon-intron junction
+            sequences are treated as semantically consistent views of the same
+            regulatory program: evolutionary orthologs are positive pairs,
+            non-homologous junctions are negatives. This discriminative
+            objective aligns embeddings of regulatory equivalents while
+            separating functionally unrelated sequences, inducing invariances
+            to unconstrained sequence and emphasizing conserved motif/RBP and
+            positional signals. We show that this pre-training strategy
+            provides representations that help predict ∆ψ, the change in exon
+            inclusion between conditions, which encodes both direction and
+            magnitude of splicing shifts. Specifically, we finetune a
+            lightweight supervised head on available labels to predict ∆ψ. To
+            make these predictions biologically meaningful, we further
+            introduce an interpretable, splice-motif-aware classification
+            framework grounded in known regulatory signals. On benchmarks
+            spanning tissue-and cell-type differential splicing, the learned
+            representations yield strong ∆ψ classification performance
+            (AUPRC/AUROC for increased/decreased inclusion) and competitive
+            results for regression (RMSE, Spearman). These findings indicate
+            that evolution-as-augmentation, instantiated via contrastive
+            learning, is an effective and biologically principled route to
+            context-resolved splicing prediction.",
+  pages    = "2026.02.20.707118",
   bibbase_note = {†Co-corresponding},
   year     =  2026,
   url      = "http://dx.doi.org/10.64898/2026.02.20.707118",
@@ -490,80 +531,81 @@ discovery under perturbations},
  keywords = {Submitted},
 }
 
-@ARTICLE{Grabski2025-df,
-  title    = "Mapping transcriptional responses to cellular perturbation
-              dictionaries with {RNA} fingerprinting",
-  author   = "Grabski, Isabella N and Lee, Junsuk and Blair, John and Dalgarno,
-              Carol and Mascio, Isabella and Bradu, Alexandra and Knowles†, David
-              A and Satija†, Rahul",
-  journal  = "bioRxiv",
-  pages    = "2025.09.19.676866",
-  abstract = "Single-cell perturbation dictionaries provide systematic
-              measurements of how cells respond to genetic and chemical
-              perturbations, and create the opportunity to assign causal
-              interpretations to observational data. Here, we introduce RNA
-              fingerprinting, a statistical framework that maps transcriptional
-              responses from new experiments onto reference perturbation
-              dictionaries. RNA fingerprinting learns denoised perturbation
-              ``fingerprints'' from single-cell data, then probabilistically
-              assigns query cells to one or more candidate perturbations while
-              accounting for uncertainty. We benchmark our method across
-              ground-truth datasets, demonstrating accurate assignments at
-              single-cell resolution, scalability to genome-wide screens, and
-              the ability to resolve combinatorial perturbations. We demonstrate
-              its broad utility across diverse biological settings: identifying
-              context-specific regulators of p53 under ribosomal stress,
-              characterizing drug mechanisms of action and dose-dependent
-              off-target effects, and uncovering cytokine-driven B cell
-              heterogeneity during secondary influenza infection in vivo.
-              Together, these results establish RNA fingerprinting as a
-              versatile framework for interpreting single-cell datasets by
-              linking cellular states to the underlying perturbations which
-              generated them.",
-  year     =  2025,
-bibbase_note = {†Co-corresponding},
-  url      = "https://www.biorxiv.org/content/10.1101/2025.09.19.676866v1.abstract",
- keywords = {Submitted},
+@ARTICLE{Grabski2026-mz,
+  title     = "Mapping transcriptional responses to cellular perturbations with
+               {RNA} fingerprinting",
+  author    = "Grabski, Isabella N and Lee, Junsuk and Blair, John D and
+               Dalgarno, Carol and Mascio, Isabella and Bradu, Alexandra and
+               Knowles†, David A and Satija†, Rahul",
+  journal   = "Cell",
+  abstract  = "SummarySingle-cell perturbation dictionaries measure how cells
+               respond to genetic and chemical perturbations, creating the
+               opportunity to assign causal interpretations to observational
+               data. We introduce RNA fingerprinting, a statistical framework
+               that maps transcriptional responses from new experiments onto
+               reference perturbation dictionaries. RNA fingerprinting learns
+               perturbation representations, or ``fingerprints,'' from
+               single-cell data, then probabilistically assigns query cells to
+               one or more candidate perturbations. We benchmark on ground-truth
+               datasets, demonstrating accurate assignments at single-cell
+               resolution, scalability to genome-wide screens, and the ability
+               to resolve combinatorial perturbations. We demonstrate broad
+               utility across diverse biological settings: identifying
+               context-specific regulators of p53 under ribosomal stress,
+               characterizing dose-dependent drug mechanisms of action, and
+               uncovering cytokine-driven B cell heterogeneity during secondary
+               influenza infection in vivo. Together, these results establish
+               RNA fingerprinting as a versatile framework for interpreting
+               single-cell datasets by linking cellular states to their
+               underlying perturbations.",
+   bibbase_note = {†Co-corresponding},
+  year      =  2026,
+  url       = "http://dx.doi.org/10.1016/j.cell.2026.09.017",
+  Url_Preprint  = "https://www.biorxiv.org/content/10.1101/2025.09.19.676866v1.abstract",
+  keywords = {Highlighted}
 }
 
 
-@ARTICLE{Banerjee2025-nb,
-  title    = "Convex approaches to isolate the shared and distinct genetic
-              structures of subphenotypes in heterogeneous complex traits",
-  author   = "Banerjee, Saikat and O'Connell, Shane and Colbert, Sarah M C and
-              Mullins, Niamh and Knowles, David A",
-  journal  = "medRxiv",
-  pages    = "2025.04.15.25325870",
-  abstract = "Groups of complex diseases, such as coronary heart diseases,
-              neuropsychiatric disorders, and cancers, often display overlapping
-              clinical symptoms and pharmacological treatments. The shared
-              associations of genetic variants across diseases has the potential
-              to explain their underlying biological processes, but this remains
-              poorly understood. To address this, we model the matrix of summary
-              statistics of trait-associated genetic variants as the sum of a
-              low-rank component - representing shared biological processes -
-              and a sparse component, representing unique processes and
-              arbitrarily corrupted or contaminated components. We introduce
-              Clorinn, an open-source Python software that uses convex
-              optimization algorithms to recover these components by minimizing
-              a weighted combination of the nuclear norm and of the L1 norm.
-              Among others, Clorinn provides two significant benefits: (a)
-              Convex optimization guarantees reproducibility of the components,
-              and (b) The low-rank ``uncorrupted'' matrix allows robust singular
-              value decomposition (SVD) and principal component analysis (PCA),
-              which are otherwise highly sensitive to outliers and noise in the
-              input matrix. In extensive simulations, we observe that Clorinn
-              outperforms state-of-the-art approaches in capturing the shared
-              latent factors across phenotypes. We apply Clorinn to estimate 200
-              latent factors from GWAS summary data of 2,110 phenotypes measured
-              in European-ancestry Pan-UK BioBank individuals N = 420,531 and
-              14 psychiatric disorders.",
-  month    =  apr,
-  year     =  2025,
-  keywords = {Submitted},
-  url      = "https://www.medrxiv.org/content/10.1101/2025.04.15.25325870v1.abstract",
-  language = "en"
+@ARTICLE{Banerjee2026-lv,
+  title     = "Convex approaches to isolate the shared and distinct genetic
+               components of complex traits",
+  author    = "Banerjee, Saikat and O'Connell, Shane and Colbert, Sarah M C and
+               Mullins, Niamh and Knowles, David A",
+  journal   = "Bioinformatics",
+  abstract  = "MOTIVATION: Groups of complex diseases, such as coronary heart
+               disease, neuropsychiatric disorders, and cancers, often display
+               overlapping clinical symptoms and pharmacological responses.
+               Genetic variants with shared associations across diseases have
+               the potential to help explain their underlying biological
+               processes, but this sharing remains poorly understood. RESULTS:
+               We model the matrix of summary statistics of trait-associated
+               genetic variants as the sum of a low-rank component-representing
+               shared biological processes-and a sparse component representing
+               disease-unique processes and arbitrarily corrupted or
+               contaminated components. We introduce Clorinn, an open-source
+               Python library that uses convex optimization algorithms to
+               recover these components by minimizing a weighted combination of
+               nuclear norm and L1 terms. Clorinn provides two significant
+               benefits: (i) convex optimization guarantees reproducibility of
+               the components and (ii) the low-rank ``uncorrupted'' matrix
+               allows robust singular value decomposition and principal
+               component analysis, which are otherwise highly sensitive to
+               outliers and noise in the input matrix. In extensive simulations,
+               we observe that Clorinn is uniquely able to recover the
+               disease-group structure while remaining competitive on
+               factor-level reconstruction error. We apply Clorinn to estimate
+               200 latent factors from GWAS summary statistics for 2110
+               phenotypes from the Pan-UK Biobank (N = 420 531 European-ancestry
+               individuals) and 10 latent factors from 14 psychiatric disorders.
+               Clorinn is available at
+               https://github.com/daklab/clorinn.",
+  month     =  oct,
+  year      =  2026,
+  url       = "http://dx.doi.org/10.1093/bioinformatics/btag670",
+  Url_Preprint      = "https://www.medrxiv.org/content/10.1101/2025.04.15.25325870v1.abstract",
+  keywords = {Genetics}
 }
+
 
 @ARTICLE{Naito2025-xn,
   title    = "Mosaic chromosomal alterations in blood are associated with an
@@ -591,8 +633,7 @@ bibbase_note = {†Co-corresponding},
   month    =  jun,
   year     =  2025,
   keywords = {Submitted},
-  url      = "https://www.medrxiv.org/content/10.1101/2025.05.29.25328544.abstract",
-  language = "en"
+  url      = "https://www.medrxiv.org/content/10.1101/2025.05.29.25328544.abstract"
 }
 
 
@@ -767,46 +808,32 @@ Jack and Knowles, David A and Won, Hong-Hee and Raj, Towfique},
   keywords = {Genetics}
 }
 
-
-@article{Schertzer2025-pv,
-  title    = "Perplexity as a metric for isoform diversity in the human
-              transcriptome",
-  author   = "Schertzer, Megan D and Park, Stella H and Su, Jiayu and Sheynkman,
-              Gloria M and Knowles, David A",
-  journal  = "bioRxiv",
-  pages    = "2025.07.02.662769",
-  abstract = "Long-read sequencing (LRS) has revealed a far greater diversity of
-              RNA isoforms than earlier technologies, increasing the critical
-              need to determine which, and how many, isoforms per gene are
-              biologically meaningful. To define the space of relevant isoforms
-              from LRS, many existing analysis pipelines rely on arbitrary
-              expression cutoffs, but a single threshold cannot accommodate the
-              broad variability in isoform complexity across genes, cell-types,
-              and disease states captured by LRS. To address this, we propose
-              using perplexity, an interpretable measure derived from entropy,
-              that quantifies the effective number of isoforms per gene based on
-              the full, unfiltered isoform ratio distribution. Calculating
-              perplexity for 124 ENCODE4 PacBio LRS datasets spanning 55 human
-              cell types, we show that it provides intuitive assessments of
-              isoform diversity and captures uncertainty across genes with
-              varying complexity. Perplexity can be calculated at multiple gene
-              regulatory levels, from transcript to protein, to compare how
-              isoform diversity is reduced across stages of gene expression. On
-              average, genes have an ORF-level perplexity of 2.1, indicating
-              production of two distinct protein isoforms. We extended this
-              analysis to evaluate expression variation across tissues and
-              identified 4,593 ORFs across 3,102 genes with moderate to extreme
-              tissue-specificity. We propose perplexity as a consistent,
-              quantitative metric for interpreting isoform diversity across
-              genes, cell types, and disease states. All results are compiled
-              into a community resource to enable cross-study comparisons of
-              novel isoforms.",
-  month    =  jul,
-  year     =  2025,
-   keywords = {Submitted},
-  url      = "http://dx.doi.org/10.1101/2025.07.02.662769",
-  language = "en"
+@ARTICLE{Schertzer2026-sw,
+  title     = "Perplexity as a metric for isoform diversity in the human
+               transcriptome",
+ author = {Schertzer, Megan D and Park, Stella H and Su, Jiayu and Reese, Fairlie and Sheynkman†, Gloria M and Knowles†, David A},
+  journal   = "Genome Biology",
+  abstract  = "Abstract Characterizing the extensive isoform diversity revealed
+               by long-read RNA-sequencing remains challenging. After removal of
+               technical artifacts, existing pipelines apply arbitrary
+               expression thresholds that filter out bona fide transcript
+               structures, obscuring diversity and hindering reproducibility.
+               Instead of discarding isoforms, we propose a fundamentally
+               distinct approach to quantifying isoform diversity using
+               perplexity –the effective number of isoforms for a gene, derived
+               from Shannon entropy–wherein every isoform, including
+               low-abundance ones, contributes proportionally to a gene’s
+               diversity. Analyzing 124 ENCODE4 PacBio datasets spanning 55
+               human cell types, we show that perplexity provides interpretable
+               and reproducible isoform diversity measurements across genes,
+               regulatory levels, and tissues.",
+  year      =  2026,
+   bibbase_note = {†Co-corresponding},
+  url       = "http://dx.doi.org/10.1186/s13059-026-04260-2",
+  Url_Preprint      = "http://dx.doi.org/10.1101/2025.07.02.662769",
+  keywords = {Highlighted}
 }
+
 
 
 @ARTICLE{Fernando2024-pw,
@@ -889,7 +916,7 @@ Subspace Principal Component Analysis},
  author = {Moses, Alan M and Stajich, Jason E and Gasch, Audrey P and
 Knowles, David A},
  journal = {Genetics},
- keywords = {Genetics},
+ keywords = {Highlighted},
  title = {Inferring fungal cis-regulatory networks from genome sequences},
  url = {https://doi.org/10.1093/genetics/iyaf209},
  year = {2025}
